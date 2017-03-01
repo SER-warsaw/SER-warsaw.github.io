@@ -1,0 +1,32 @@
+@import "susy";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0 auto;
+	padding: 0;
+	 overflow-x:hidden;
+	 font-family: times;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: $second-bg-color;
+	line-height: 1.5em;
+}
+
+main {
+	@include container(100%);
+}
+
+h2 {
+	margin-bottom: 100px;
+	font-size: 2em;
+	color: $heading-light;
+	&:nth-child(odd){
+		color: $heading-dark;
+	}
+	}
