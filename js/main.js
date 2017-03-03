@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+//timeline view content 
 $(".inline").colorbox({inline:true, width:"50%"});
 
 var menus = document.getElementsByClassName('mobile-toggle');
@@ -18,5 +19,22 @@ $('.mobile-toggle').click(function() {
     }
 });
 
+
+$(function($){
+  $.scrollTo(0);
+  
+  $('.link').click(function(){
+  $.scrollTo($(this).attr('href'),700);
+});
+});
+
+$(function() {
+    $(".slide-btn").click(function(event) {
+  $('.show').slideToggle(1000);
+    });
+ });
+
+// timer from information section
 	$('.timer').countTo();
+
 });

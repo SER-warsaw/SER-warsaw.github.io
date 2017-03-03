@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/colorbox.css">
 		<!-- Jquery -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 	</head>
 	<body>
 		<header class="top">
@@ -25,11 +26,11 @@
         			</div>
         			<nav>
             			<ul>
-							<li><a href=""><img src="img/whyrczarny.png"></a></li>
-	               			<li><a href="#about" class="link">Spotkania</a></li>
-							<li><a href="#speakers" class="link">Organizatorzy</a></li>
-							<li><a href="#program" class="link">Kontakt</a></li>
-							<li><a href="#program" class="link">Najbliższe spotkanie</a></li>
+							<li><a href="http://whyr.pl/" target="_blank"><img src="img/whyrczarny.png" alt="whyR"></a></li>
+	               			<li><a href="#meeting" class="link">Spotkania</a></li>
+							<li><a href="#org" class="link">Organizatorzy</a></li>
+							<li><a href="#contact" class="link">Kontakt</a></li>
+							<li><a href="https://www.meetup.com/Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup/" target="_blank">Najbliższe spotkanie</a></li>
 
             			</ul>
         			</nav>
@@ -37,7 +38,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="time-line">
+			<section id="meeting"class="time-line">
 				<ul class="timeline">
 					<!-- meeting 19 -->
 					<li>
@@ -267,7 +268,9 @@
 							</div>
 						</div>
 					</li>
+					<div class="slide-btn">Rozwiń</div>
 					<!-- meeting 12 -->
+					<div class="show">
 					<li>
 						<div class="direction-l">
 							<a class='inline' href="#inline-12">
@@ -651,15 +654,17 @@
 								</div>
 							</div>
 						</div>
-					</li>
-
+					</li>	
+					</div>				
 				</ul>	
+				<div class="city-cont">
 				<div class="city"></div>
+				</div>
 			</section>
 			<!-- <section class="city">
 				<img src="img/BW-Template_02.jpg">
 			</section> -->
-			<section class="organizators">
+			<section id="org" class="organizators">
 				<div class="content-org">
 					<h2 class="title">Organizatorzy</h2>
 			     	<div class="wrapper">
@@ -775,7 +780,7 @@
 			     	</div>
 				</div>
 			</section>
-			<section class="contact">
+			<section id="contact"  class="contact">
 				<div class="content-contact">
 					<h2>Kontakt</h2>
 					<ul>
@@ -786,11 +791,11 @@
 							<a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a>
 						</li>
 						<li>
-							<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							<a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 					<p>MiNI Politechnika Warszawska Koszykowa 75 Warszawa</p>
-					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9776.658901507688!2d21.007281!3d52.222225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd3fd66f27c93aed!2sPolitechnika+Warszawska!5e0!3m2!1spl!2sus!4v1488271728795" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+					<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9776.658901507688!2d21.007281!3d52.222225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd3fd66f27c93aed!2sPolitechnika+Warszawska!5e0!3m2!1spl!2sus!4v1488271728795" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</section>
 			

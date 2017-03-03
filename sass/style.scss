@@ -1,6 +1,7 @@
 @import "compass";
 @import "partials/variables";
 @import "partials/normalize";
+@import "partials/mixins";
 @import "partials/base";
 @import "partials/timeline";
 @import "partials/grid";
@@ -56,9 +57,10 @@
   a{
     text-decoration: none;
     color: $heading-dark;
-  }
+    text-transform: uppercase;
+    font-weight: 600;
 }
-
+}
 // open nav
 .open-nav{
   height: 310px;
@@ -96,9 +98,11 @@
     }
 }
 
-
+/*================!!!!===============*/
 // Timeline section in timeline.scss !!!
-
+/*================!!!!=================*/
+// below we have content of timeline !!!!
+/*================!!!!=================*/
 .content-hide {
   display: none;
 }
@@ -107,6 +111,27 @@
   padding:10px;
  background:#fff;
 }
+
+.person {
+  text-align: center;
+  a {
+    font-size: 1.1em;
+    color: $heading-dark;
+    @media #{$phone}{
+      font-size: 1.8em;
+    }
+  }
+
+  p{
+    font-size: 0.7em;
+    line-height: 14px;
+    @media #{$phone}{
+      font-size: 1em;
+    }
+  }
+
+}
+
 // Organizators section style
 .organizators{
   margin: 0 auto;
@@ -125,7 +150,10 @@
     img {
       max-width: 150px;
     }
-    
+    a{
+      font-size: 1.7em;
+      color: $heading-dark;
+    }
   } 
 }
 // Information section style
@@ -134,7 +162,7 @@
   padding: 250px 0;
   @include transform(skew(0deg, -10deg));
   margin-top: 200px;  
-  
+  color: $heading-light;
   .content-inf{
     @include transform(skew(0deg, 10deg));
     text-align: center;
@@ -150,6 +178,7 @@
   padding-top: 200px;
   margin: 0 auto;
   text-align: center;
+  color: $heading-dark;
   img {
     width: 200px;
     padding: 20px;
@@ -162,6 +191,7 @@
   @include transform(skew(0deg, -10deg));
   margin-top: 200px;  
   text-align: center;
+  color: $heading-light;
   .content-contact{
     @include transform(skew(0deg, 10deg));
     text-align: center;
@@ -170,13 +200,16 @@
     display: inline-block;
     font-size: 2.5em;
     padding: 15px;
+    a{
+      color: $heading-light;
+    }
    }
     .map {
-      width: 300px;
-      height: 200px;
+      width: 350px;
+      height: 230px;
       @media #{$phone}{
-      width: 450px;
-      height: 300px;
+      width: 550px;
+      height: 350px;
       }
     }
     
@@ -185,11 +218,18 @@
 
 
 // City test
+
+
 .city {
-  width: 100.15%;
-  height: 500px;
+  width: 100%;
   background-image: url('../img/BW-Template_02.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+ min-height: 200px;
+background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+footer {
+  color: $heading-dark;
 }
 
