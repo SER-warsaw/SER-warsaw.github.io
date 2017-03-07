@@ -213,12 +213,36 @@
       padding: 6px 12px;
     }
   }
-
   .slide-btn:hover {
     background: #464646;
     color: #f8f8f8;
   }
 
+.return-btn{
+    margin: 30px auto;
+    text-align: center;
+    z-index: 9999;
+    position: relative;
+    font-size: 1.1em;
+    border: 1px solid black;
+    width: 20%;
+    background: #f8f8f8;
+    padding: 6px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #464646;
+    cursor: pointer;
+    @include bs-trans(0.3s, ease-out);
+    @media #{$phone}{
+      font-size: 2em;
+      padding: 6px 12px;
+    }
+  }
+
+  .return-btn:hover {
+    background: #464646;
+    color: #f8f8f8;
+  }
 
 
 

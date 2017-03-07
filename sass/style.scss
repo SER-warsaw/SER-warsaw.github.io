@@ -154,6 +154,13 @@
       font-size: 1.7em;
       color: $heading-dark;
     }
+  }
+  .mid{
+    margin-top: 10px;
+    @media #{$phone}{
+      margin-top: 50px;
+    }
+
   } 
 }
 // Information section style
@@ -191,12 +198,39 @@
   color: $heading-dark;
   img {
     width: 200px;
+    height: 150px;
     padding: 20px;
   }
   .sponsor-list {
+    margin: 0 auto;
     text-align: left;
+    width: 50%;
+    padding-top: 30px;
   }
 }
+
+.arrow-container {
+  position: relative;
+  height: 100px;
+  padding-top: 40px;
+  .arrow{
+    position: absolute;
+    transform: translate(35%, -80%);
+   
+    font-size: 2em;
+    opacity: 0;
+    @include bs-trans(0.3s, linear);
+    }
+    a{
+      color: $heading-dark;
+      &:hover .arrow{
+        opacity: 1;
+        animation: pulse 3s infinite;
+        transform: translate(35%, -80%);
+      }
+    }
+  }
+
 
 // contact section with social media icons, adress info and google maps
 .contact{
@@ -214,6 +248,11 @@
     display: inline-block;
     font-size: 2.5em;
     padding: 15px;
+    transform: scale(1);
+    @include bs-trans(0.2s, ease-out);
+    &:hover{
+    transform: scale(1.4);
+    }
     a{
       color: $heading-light;
     }
@@ -243,5 +282,37 @@ background-repeat: no-repeat;
 
 footer {
   color: $heading-dark;
+  margin: 150px auto 20px auto;
+  .foot {
+    margin-top: 100px;
+    position: relative;
+    a{
+      color: $heading-dark;
+    }
+    .klaudia {
+      position: relative;
+      height: 40px;
+      .brush {
+        position: absolute;
+        transform: translate(35%, -15%);
+        font-size: 1.3em;
+      }
+      &:hover .brush {
+        animation: wrench 6s infinite;
+      }
+    }
+    .emil {
+      position: relative;
+      height: 40px;
+      .pen {
+        position: absolute;
+        transform: translate(35%, -15%);
+        font-size: 1.3em;
+      }
+      &:hover .pen {
+        animation: wrench 6s infinite;
+      }
+    }
+  }
 }
 

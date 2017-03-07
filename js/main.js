@@ -29,10 +29,22 @@ $(function($){
 });
 
 $(function() {
-    $(".slide-btn").click(function(event) {
-  $('.show').slideToggle(1000);
+    var firstText = "Zwiń";
+    var secText = "Rozwiń";
+    $(".slide-btn").click(function(event) { 
+      $('.show').slideToggle(1000);
+      $('#slide-btn').fadeOut(function () {
+      $('#slide-btn').text(($('#slide-btn').text() == secText) ? firstText : secText).fadeIn();
     });
- });
+  });
+
+$(".return-btn").click(function(){
+  $('.show').slideToggle(1000);
+  $('#slide-btn').fadeOut(function () {
+  $('#slide-btn').text(($('#slide-btn').text() == secText) ? firstText : secText).fadeIn();
+    });
+  });
+});
 
 // timer from information section
 	$('.timer').countTo();
