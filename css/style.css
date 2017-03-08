@@ -386,147 +386,1155 @@ img { width: auto; max-width: 100%; height: auto; }
   .col-11 { width: 91.66667%; }
   /* line 69, ../sass/partials/_grid.scss */
   .col-12 { width: 100%; } }
-/* line 10, ../sass/style.scss */
+@-webkit-keyframes bounce { 0% { -webkit-transform: translateY(0); }
+  20% { -webkit-transform: translateY(0); }
+  40% { -webkit-transform: translateY(-30px); }
+  50% { -webkit-transform: translateY(0); }
+  60% { -webkit-transform: translateY(-15px); }
+  80% { -webkit-transform: translateY(0); }
+  100% { -webkit-transform: translateY(0); } }
+@-moz-keyframes bounce { 0% { -moz-transform: translateY(0); }
+  20% { -moz-transform: translateY(0); }
+  40% { -moz-transform: translateY(-30px); }
+  50% { -moz-transform: translateY(0); }
+  60% { -moz-transform: translateY(-15px); }
+  80% { -moz-transform: translateY(0); }
+  100% { -moz-transform: translateY(0); } }
+@-ms-keyframes bounce { 0% { -ms-transform: translateY(0); }
+  20% { -ms-transform: translateY(0); }
+  40% { -ms-transform: translateY(-30px); }
+  50% { -ms-transform: translateY(0); }
+  60% { -ms-transform: translateY(-15px); }
+  80% { -ms-transform: translateY(0); }
+  100% { -ms-transform: translateY(0); } }
+@-o-keyframes bounce { 0% { -o-transform: translateY(0); }
+  20% { -o-transform: translateY(0); }
+  40% { -o-transform: translateY(-30px); }
+  50% { -o-transform: translateY(0); }
+  60% { -o-transform: translateY(-15px); }
+  80% { -o-transform: translateY(0); }
+  100% { -o-transform: translateY(0); } }
+@keyframes bounce { 0% { transform: translateY(0); }
+  20% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  50% { transform: translateY(0); }
+  60% { transform: translateY(-15px); }
+  80% { transform: translateY(0); }
+  100% { transform: translateY(0); } }
+/* line 28, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_bounce.scss */
+.bounce { -webkit-animation-name: bounce; -moz-animation-name: bounce; -ms-animation-name: bounce; -o-animation-name: bounce; animation-name: bounce; }
+
+@-webkit-keyframes flash { 0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; } }
+@-moz-keyframes flash { 0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; } }
+@-ms-keyframes flash { 0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; } }
+@-o-keyframes flash { 0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes flash { 0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; } }
+/* line 26, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_flash.scss */
+.flash { -webkit-animation-name: flash; -moz-animation-name: flash; -ms-animation-name: flash; -o-animation-name: flash; animation-name: flash; }
+
+@-webkit-keyframes pulse { 0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); } }
+@-moz-keyframes pulse { 0% { -moz-transform: scale(1); }
+  50% { -moz-transform: scale(1.1); }
+  100% { -moz-transform: scale(1); } }
+@-ms-keyframes pulse { 0% { -ms-transform: scale(1); }
+  50% { -ms-transform: scale(1.1); }
+  100% { -ms-transform: scale(1); } }
+@-o-keyframes pulse { 0% { -o-transform: scale(1); }
+  50% { -o-transform: scale(1.1); }
+  100% { -o-transform: scale(1); } }
+@keyframes pulse { 0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); } }
+/* line 26, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_pulse.scss */
+.pulse { -webkit-animation-name: pulse; -moz-animation-name: pulse; -ms-animation-name: pulse; -o-animation-name: pulse; animation-name: pulse; }
+
+@-webkit-keyframes shake { 0% { -webkit-transform: translateX(0); }
+  10% { -webkit-transform: translateX(-10px); }
+  20% { -webkit-transform: translateX(10px); }
+  30% { -webkit-transform: translateX(-10px); }
+  40% { -webkit-transform: translateX(10px); }
+  50% { -webkit-transform: translateX(-10px); }
+  60% { -webkit-transform: translateX(10px); }
+  70% { -webkit-transform: translateX(-10px); }
+  80% { -webkit-transform: translateX(10px); }
+  90% { -webkit-transform: translateX(-10px); }
+  100% { -webkit-transform: translateX(0); } }
+@-moz-keyframes shake { 0% { -moz-transform: translateX(0); }
+  10% { -moz-transform: translateX(-10px); }
+  20% { -moz-transform: translateX(10px); }
+  30% { -moz-transform: translateX(-10px); }
+  40% { -moz-transform: translateX(10px); }
+  50% { -moz-transform: translateX(-10px); }
+  60% { -moz-transform: translateX(10px); }
+  70% { -moz-transform: translateX(-10px); }
+  80% { -moz-transform: translateX(10px); }
+  90% { -moz-transform: translateX(-10px); }
+  100% { -moz-transform: translateX(0); } }
+@-ms-keyframes shake { 0% { -ms-transform: translateX(0); }
+  10% { -ms-transform: translateX(-10px); }
+  20% { -ms-transform: translateX(10px); }
+  30% { -ms-transform: translateX(-10px); }
+  40% { -ms-transform: translateX(10px); }
+  50% { -ms-transform: translateX(-10px); }
+  60% { -ms-transform: translateX(10px); }
+  70% { -ms-transform: translateX(-10px); }
+  80% { -ms-transform: translateX(10px); }
+  90% { -ms-transform: translateX(-10px); }
+  100% { -ms-transform: translateX(0); } }
+@-o-keyframes shake { 0% { -o-transform: translateX(0); }
+  10% { -o-transform: translateX(-10px); }
+  20% { -o-transform: translateX(10px); }
+  30% { -o-transform: translateX(-10px); }
+  40% { -o-transform: translateX(10px); }
+  50% { -o-transform: translateX(-10px); }
+  60% { -o-transform: translateX(10px); }
+  70% { -o-transform: translateX(-10px); }
+  80% { -o-transform: translateX(10px); }
+  90% { -o-transform: translateX(-10px); }
+  100% { -o-transform: translateX(0); } }
+@keyframes shake { 0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  20% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  60% { transform: translateX(10px); }
+  70% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  90% { transform: translateX(-10px); }
+  100% { transform: translateX(0); } }
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_shake.scss */
+.shake { -webkit-animation-name: shake; -moz-animation-name: shake; -ms-animation-name: shake; -o-animation-name: shake; animation-name: shake; }
+
+@-webkit-keyframes swing { 20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; }
+  20% { -webkit-transform: rotate(15deg); }
+  40% { -webkit-transform: rotate(-10deg); }
+  60% { -webkit-transform: rotate(5deg); }
+  80% { -webkit-transform: rotate(-5deg); }
+  100% { -webkit-transform: rotate(0deg); } }
+@-moz-keyframes swing { 20%, 40%, 60%, 80%, 100% { -moz-transform-origin: top center; }
+  20% { -moz-transform: rotate(15deg); }
+  40% { -moz-transform: rotate(-10deg); }
+  60% { -moz-transform: rotate(5deg); }
+  80% { -moz-transform: rotate(-5deg); }
+  100% { -moz-transform: rotate(0deg); } }
+@-ms-keyframes swing { 20%, 40%, 60%, 80%, 100% { -ms-transform-origin: top center; }
+  20% { -ms-transform: rotate(15deg); }
+  40% { -ms-transform: rotate(-10deg); }
+  60% { -ms-transform: rotate(5deg); }
+  80% { -ms-transform: rotate(-5deg); }
+  100% { -ms-transform: rotate(0deg); } }
+@-o-keyframes swing { 20%, 40%, 60%, 80%, 100% { -o-transform-origin: top center; }
+  20% { -o-transform: rotate(15deg); }
+  40% { -o-transform: rotate(-10deg); }
+  60% { -o-transform: rotate(5deg); }
+  80% { -o-transform: rotate(-5deg); }
+  100% { -o-transform: rotate(0deg); } }
+@keyframes swing { 20%, 40%, 60%, 80%, 100% { transform-origin: top center; }
+  20% { transform: rotate(15deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(5deg); }
+  80% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); } }
+/* line 27, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_swing.scss */
+.swing { -webkit-transform-origin: top center; -moz-transform-origin: top center; -ms-transform-origin: top center; -o-transform-origin: top center; transform-origin: top center; -webkit-animation-name: swing; -moz-animation-name: swing; -ms-animation-name: swing; -o-animation-name: swing; animation-name: swing; }
+
+@-webkit-keyframes tada { 0% { -webkit-transform: scale(1); }
+  10% { -webkit-transform: scale(0.9) rotate(-3deg); }
+  20% { -webkit-transform: scale(0.9) rotate(-3deg); }
+  30% { -webkit-transform: scale(1.1) rotate(3deg); }
+  40% { -webkit-transform: scale(1.1) rotate(-3deg); }
+  50% { -webkit-transform: scale(1.1) rotate(3deg); }
+  60% { -webkit-transform: scale(1.1) rotate(-3deg); }
+  70% { -webkit-transform: scale(1.1) rotate(3deg); }
+  80% { -webkit-transform: scale(1.1) rotate(-3deg); }
+  90% { -webkit-transform: scale(1.1) rotate(3deg); }
+  100% { -webkit-transform: scale(1) rotate(0); } }
+@-moz-keyframes tada { 0% { -moz-transform: scale(1); }
+  10% { -moz-transform: scale(0.9) rotate(-3deg); }
+  20% { -moz-transform: scale(0.9) rotate(-3deg); }
+  30% { -moz-transform: scale(1.1) rotate(3deg); }
+  40% { -moz-transform: scale(1.1) rotate(-3deg); }
+  50% { -moz-transform: scale(1.1) rotate(3deg); }
+  60% { -moz-transform: scale(1.1) rotate(-3deg); }
+  70% { -moz-transform: scale(1.1) rotate(3deg); }
+  80% { -moz-transform: scale(1.1) rotate(-3deg); }
+  90% { -moz-transform: scale(1.1) rotate(3deg); }
+  100% { -moz-transform: scale(1) rotate(0); } }
+@-ms-keyframes tada { 0% { -ms-transform: scale(1); }
+  10% { -ms-transform: scale(0.9) rotate(-3deg); }
+  20% { -ms-transform: scale(0.9) rotate(-3deg); }
+  30% { -ms-transform: scale(1.1) rotate(3deg); }
+  40% { -ms-transform: scale(1.1) rotate(-3deg); }
+  50% { -ms-transform: scale(1.1) rotate(3deg); }
+  60% { -ms-transform: scale(1.1) rotate(-3deg); }
+  70% { -ms-transform: scale(1.1) rotate(3deg); }
+  80% { -ms-transform: scale(1.1) rotate(-3deg); }
+  90% { -ms-transform: scale(1.1) rotate(3deg); }
+  100% { -ms-transform: scale(1) rotate(0); } }
+@-o-keyframes tada { 0% { -o-transform: scale(1); }
+  10% { -o-transform: scale(0.9) rotate(-3deg); }
+  20% { -o-transform: scale(0.9) rotate(-3deg); }
+  30% { -o-transform: scale(1.1) rotate(3deg); }
+  40% { -o-transform: scale(1.1) rotate(-3deg); }
+  50% { -o-transform: scale(1.1) rotate(3deg); }
+  60% { -o-transform: scale(1.1) rotate(-3deg); }
+  70% { -o-transform: scale(1.1) rotate(3deg); }
+  80% { -o-transform: scale(1.1) rotate(-3deg); }
+  90% { -o-transform: scale(1.1) rotate(3deg); }
+  100% { -o-transform: scale(1) rotate(0); } }
+@keyframes tada { 0% { transform: scale(1); }
+  10% { transform: scale(0.9) rotate(-3deg); }
+  20% { transform: scale(0.9) rotate(-3deg); }
+  30% { transform: scale(1.1) rotate(3deg); }
+  40% { transform: scale(1.1) rotate(-3deg); }
+  50% { transform: scale(1.1) rotate(3deg); }
+  60% { transform: scale(1.1) rotate(-3deg); }
+  70% { transform: scale(1.1) rotate(3deg); }
+  80% { transform: scale(1.1) rotate(-3deg); }
+  90% { transform: scale(1.1) rotate(3deg); }
+  100% { transform: scale(1) rotate(0); } }
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_tada.scss */
+.tada { -webkit-animation-name: tada; -moz-animation-name: tada; -ms-animation-name: tada; -o-animation-name: tada; animation-name: tada; }
+
+@-webkit-keyframes wobble { 0% { -webkit-transform: translateX(0%); }
+  15% { -webkit-transform: translateX(-25%) rotate(-5deg); }
+  30% { -webkit-transform: translateX(20%) rotate(3deg); }
+  45% { -webkit-transform: translateX(-15%) rotate(-3deg); }
+  60% { -webkit-transform: translateX(10%) rotate(2deg); }
+  75% { -webkit-transform: translateX(-5%) rotate(-1deg); }
+  100% { -webkit-transform: translateX(0%); } }
+@-moz-keyframes wobble { 0% { -moz-transform: translateX(0%); }
+  15% { -moz-transform: translateX(-25%) rotate(-5deg); }
+  30% { -moz-transform: translateX(20%) rotate(3deg); }
+  45% { -moz-transform: translateX(-15%) rotate(-3deg); }
+  60% { -moz-transform: translateX(10%) rotate(2deg); }
+  75% { -moz-transform: translateX(-5%) rotate(-1deg); }
+  100% { -moz-transform: translateX(0%); } }
+@-ms-keyframes wobble { 0% { -ms-transform: translateX(0%); }
+  15% { -ms-transform: translateX(-25%) rotate(-5deg); }
+  30% { -ms-transform: translateX(20%) rotate(3deg); }
+  45% { -ms-transform: translateX(-15%) rotate(-3deg); }
+  60% { -ms-transform: translateX(10%) rotate(2deg); }
+  75% { -ms-transform: translateX(-5%) rotate(-1deg); }
+  100% { -ms-transform: translateX(0%); } }
+@-o-keyframes wobble { 0% { -o-transform: translateX(0%); }
+  15% { -o-transform: translateX(-25%) rotate(-5deg); }
+  30% { -o-transform: translateX(20%) rotate(3deg); }
+  45% { -o-transform: translateX(-15%) rotate(-3deg); }
+  60% { -o-transform: translateX(10%) rotate(2deg); }
+  75% { -o-transform: translateX(-5%) rotate(-1deg); }
+  100% { -o-transform: translateX(0%); } }
+@keyframes wobble { 0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); } }
+/* line 30, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/attention-seekers/_wobble.scss */
+.wobble { -webkit-animation-name: wobble; -moz-animation-name: wobble; -ms-animation-name: wobble; -o-animation-name: wobble; animation-name: wobble; }
+
+@-webkit-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-ms-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@-o-keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes fadeIn { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+/* line 23, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeIn.scss */
+.fadeIn { -webkit-animation-name: fadeIn; -moz-animation-name: fadeIn; -ms-animation-name: fadeIn; -o-animation-name: fadeIn; animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInUp { 0% { opacity: 0; -webkit-transform: translateY(20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); } }
+@-moz-keyframes fadeInUp { 0% { opacity: 0; -moz-transform: translateY(20px); }
+  100% { opacity: 1; -moz-transform: translateY(0); } }
+@-ms-keyframes fadeInUp { 0% { opacity: 0; -ms-transform: translateY(20px); }
+  100% { opacity: 1; -ms-transform: translateY(0); } }
+@-o-keyframes fadeInUp { 0% { opacity: 0; -o-transform: translateY(20px); }
+  100% { opacity: 1; -o-transform: translateY(0); } }
+@keyframes fadeInUp { 0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInUp.scss */
+.fadeInUp { -webkit-animation-name: fadeInUp; -moz-animation-name: fadeInUp; -ms-animation-name: fadeInUp; -o-animation-name: fadeInUp; animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInDown { 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); } }
+@-moz-keyframes fadeInDown { 0% { opacity: 0; -moz-transform: translateY(-20px); }
+  100% { opacity: 1; -moz-transform: translateY(0); } }
+@-ms-keyframes fadeInDown { 0% { opacity: 0; -ms-transform: translateY(-20px); }
+  100% { opacity: 1; -ms-transform: translateY(0); } }
+@-o-keyframes fadeInDown { 0% { opacity: 0; -o-transform: translateY(-20px); }
+  100% { opacity: 1; -o-transform: translateY(0); } }
+@keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInDown.scss */
+.fadeInDown { -webkit-animation-name: fadeInDown; -moz-animation-name: fadeInDown; -ms-animation-name: fadeInDown; -o-animation-name: fadeInDown; animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInLeft { 0% { opacity: 0; -webkit-transform: translateX(-20px); }
+  100% { opacity: 1; -webkit-transform: translateX(0); } }
+@-moz-keyframes fadeInLeft { 0% { opacity: 0; -moz-transform: translateX(-20px); }
+  100% { opacity: 1; -moz-transform: translateX(0); } }
+@-ms-keyframes fadeInLeft { 0% { opacity: 0; -ms-transform: translateX(-20px); }
+  100% { opacity: 1; -ms-transform: translateX(0); } }
+@-o-keyframes fadeInLeft { 0% { opacity: 0; -o-transform: translateX(-20px); }
+  100% { opacity: 1; -o-transform: translateX(0); } }
+@keyframes fadeInLeft { 0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInLeft.scss */
+.fadeInLeft { -webkit-animation-name: fadeInLeft; -moz-animation-name: fadeInLeft; -ms-animation-name: fadeInLeft; -o-animation-name: fadeInLeft; animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInRight { 0% { opacity: 0; -webkit-transform: translateX(20px); }
+  100% { opacity: 1; -webkit-transform: translateX(0); } }
+@-moz-keyframes fadeInRight { 0% { opacity: 0; -moz-transform: translateX(20px); }
+  100% { opacity: 1; -moz-transform: translateX(0); } }
+@-ms-keyframes fadeInRight { 0% { opacity: 0; -ms-transform: translateX(20px); }
+  100% { opacity: 1; -ms-transform: translateX(0); } }
+@-o-keyframes fadeInRight { 0% { opacity: 0; -o-transform: translateX(20px); }
+  100% { opacity: 1; -o-transform: translateX(0); } }
+@keyframes fadeInRight { 0% { opacity: 0; transform: translateX(20px); }
+  100% { opacity: 1; transform: translateX(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInRight.scss */
+.fadeInRight { -webkit-animation-name: fadeInRight; -moz-animation-name: fadeInRight; -ms-animation-name: fadeInRight; -o-animation-name: fadeInRight; animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInUpBig { 0% { opacity: 0; -webkit-transform: translateY(2000px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); } }
+@-moz-keyframes fadeInUpBig { 0% { opacity: 0; -moz-transform: translateY(2000px); }
+  100% { opacity: 1; -moz-transform: translateY(0); } }
+@-ms-keyframes fadeInUpBig { 0% { opacity: 0; -ms-transform: translateY(2000px); }
+  100% { opacity: 1; -ms-transform: translateY(0); } }
+@-o-keyframes fadeInUpBig { 0% { opacity: 0; -o-transform: translateY(2000px); }
+  100% { opacity: 1; -o-transform: translateY(0); } }
+@keyframes fadeInUpBig { 0% { opacity: 0; transform: translateY(2000px); }
+  100% { opacity: 1; transform: translateY(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInUpBig.scss */
+.fadeInUpBig { -webkit-animation-name: fadeInUpBig; -moz-animation-name: fadeInUpBig; -ms-animation-name: fadeInUpBig; -o-animation-name: fadeInUpBig; animation-name: fadeInUpBig; }
+
+@-webkit-keyframes fadeInDownBig { 0% { opacity: 0; -webkit-transform: translateY(-2000px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); } }
+@-moz-keyframes fadeInDownBig { 0% { opacity: 0; -moz-transform: translateY(-2000px); }
+  100% { opacity: 1; -moz-transform: translateY(0); } }
+@-ms-keyframes fadeInDownBig { 0% { opacity: 0; -ms-transform: translateY(-2000px); }
+  100% { opacity: 1; -ms-transform: translateY(0); } }
+@-o-keyframes fadeInDownBig { 0% { opacity: 0; -o-transform: translateY(-2000px); }
+  100% { opacity: 1; -o-transform: translateY(0); } }
+@keyframes fadeInDownBig { 0% { opacity: 0; transform: translateY(-2000px); }
+  100% { opacity: 1; transform: translateY(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInDownBig.scss */
+.fadeInDownBig { -webkit-animation-name: fadeInDownBig; -moz-animation-name: fadeInDownBig; -ms-animation-name: fadeInDownBig; -o-animation-name: fadeInDownBig; animation-name: fadeInDownBig; }
+
+@-webkit-keyframes fadeInLeftBig { 0% { opacity: 0; -webkit-transform: translateX(-2000px); }
+  100% { opacity: 1; -webkit-transform: translateX(0); } }
+@-moz-keyframes fadeInLeftBig { 0% { opacity: 0; -moz-transform: translateX(-2000px); }
+  100% { opacity: 1; -moz-transform: translateX(0); } }
+@-ms-keyframes fadeInLeftBig { 0% { opacity: 0; -ms-transform: translateX(-2000px); }
+  100% { opacity: 1; -ms-transform: translateX(0); } }
+@-o-keyframes fadeInLeftBig { 0% { opacity: 0; -o-transform: translateX(-2000px); }
+  100% { opacity: 1; -o-transform: translateX(0); } }
+@keyframes fadeInLeftBig { 0% { opacity: 0; transform: translateX(-2000px); }
+  100% { opacity: 1; transform: translateX(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInLeftBig.scss */
+.fadeInLeftBig { -webkit-animation-name: fadeInLeftBig; -moz-animation-name: fadeInLeftBig; -ms-animation-name: fadeInLeftBig; -o-animation-name: fadeInLeftBig; animation-name: fadeInLeftBig; }
+
+@-webkit-keyframes fadeInRightBig { 0% { opacity: 0; -webkit-transform: translateX(2000px); }
+  100% { opacity: 1; -webkit-transform: translateX(0); } }
+@-moz-keyframes fadeInRightBig { 0% { opacity: 0; -moz-transform: translateX(2000px); }
+  100% { opacity: 1; -moz-transform: translateX(0); } }
+@-ms-keyframes fadeInRightBig { 0% { opacity: 0; -ms-transform: translateX(2000px); }
+  100% { opacity: 1; -ms-transform: translateX(0); } }
+@-o-keyframes fadeInRightBig { 0% { opacity: 0; -o-transform: translateX(2000px); }
+  100% { opacity: 1; -o-transform: translateX(0); } }
+@keyframes fadeInRightBig { 0% { opacity: 0; transform: translateX(2000px); }
+  100% { opacity: 1; transform: translateX(0); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-entrances/_fadeInRightBig.scss */
+.fadeInRightBig { -webkit-animation-name: fadeInRightBig; -moz-animation-name: fadeInRightBig; -ms-animation-name: fadeInRightBig; -o-animation-name: fadeInRightBig; animation-name: fadeInRightBig; }
+
+@-webkit-keyframes fadeOut { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+@-moz-keyframes fadeOut { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+@-ms-keyframes fadeOut { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+@-o-keyframes fadeOut { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+@keyframes fadeOut { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+/* line 23, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOut.scss */
+.fadeOut { -webkit-animation-name: fadeOut; -moz-animation-name: fadeOut; -ms-animation-name: fadeOut; -o-animation-name: fadeOut; animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOutUp { 0% { opacity: 1; -webkit-transform: translateY(0); }
+  100% { opacity: 0; -webkit-transform: translateY(-20px); } }
+@-moz-keyframes fadeOutUp { 0% { opacity: 1; -moz-transform: translateY(0); }
+  100% { opacity: 0; -moz-transform: translateY(-20px); } }
+@-ms-keyframes fadeOutUp { 0% { opacity: 1; -ms-transform: translateY(0); }
+  100% { opacity: 0; -ms-transform: translateY(-20px); } }
+@-o-keyframes fadeOutUp { 0% { opacity: 1; -o-transform: translateY(0); }
+  100% { opacity: 0; -o-transform: translateY(-20px); } }
+@keyframes fadeOutUp { 0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutUp.scss */
+.fadeOutUp { -webkit-animation-name: fadeOutUp; -moz-animation-name: fadeOutUp; -ms-animation-name: fadeOutUp; -o-animation-name: fadeOutUp; animation-name: fadeOutUp; }
+
+@-webkit-keyframes fadeOutDown { 0% { opacity: 1; -webkit-transform: translateY(0); }
+  100% { opacity: 0; -webkit-transform: translateY(20px); } }
+@-moz-keyframes fadeOutDown { 0% { opacity: 1; -moz-transform: translateY(0); }
+  100% { opacity: 0; -moz-transform: translateY(20px); } }
+@-ms-keyframes fadeOutDown { 0% { opacity: 1; -ms-transform: translateY(0); }
+  100% { opacity: 0; -ms-transform: translateY(20px); } }
+@-o-keyframes fadeOutDown { 0% { opacity: 1; -o-transform: translateY(0); }
+  100% { opacity: 0; -o-transform: translateY(20px); } }
+@keyframes fadeOutDown { 0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(20px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutDown.scss */
+.fadeOutDown { -webkit-animation-name: fadeOutDown; -moz-animation-name: fadeOutDown; -ms-animation-name: fadeOutDown; -o-animation-name: fadeOutDown; animation-name: fadeOutDown; }
+
+@-webkit-keyframes fadeOutLeft { 0% { opacity: 1; -webkit-transform: translateX(0); }
+  100% { opacity: 0; -webkit-transform: translateX(-20px); } }
+@-moz-keyframes fadeOutLeft { 0% { opacity: 1; -moz-transform: translateX(0); }
+  100% { opacity: 0; -moz-transform: translateX(-20px); } }
+@-ms-keyframes fadeOutLeft { 0% { opacity: 1; -ms-transform: translateX(0); }
+  100% { opacity: 0; -ms-transform: translateX(-20px); } }
+@-o-keyframes fadeOutLeft { 0% { opacity: 1; -o-transform: translateX(0); }
+  100% { opacity: 0; -o-transform: translateX(-20px); } }
+@keyframes fadeOutLeft { 0% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-20px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutLeft.scss */
+.fadeOutLeft { -webkit-animation-name: fadeOutLeft; -moz-animation-name: fadeOutLeft; -ms-animation-name: fadeOutLeft; -o-animation-name: fadeOutLeft; animation-name: fadeOutLeft; }
+
+@-webkit-keyframes fadeOutRight { 0% { opacity: 1; -webkit-transform: translateX(0); }
+  100% { opacity: 0; -webkit-transform: translateX(20px); } }
+@-moz-keyframes fadeOutRight { 0% { opacity: 1; -moz-transform: translateX(0); }
+  100% { opacity: 0; -moz-transform: translateX(20px); } }
+@-ms-keyframes fadeOutRight { 0% { opacity: 1; -ms-transform: translateX(0); }
+  100% { opacity: 0; -ms-transform: translateX(20px); } }
+@-o-keyframes fadeOutRight { 0% { opacity: 1; -o-transform: translateX(0); }
+  100% { opacity: 0; -o-transform: translateX(20px); } }
+@keyframes fadeOutRight { 0% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(20px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutRight.scss */
+.fadeOutRight { -webkit-animation-name: fadeOutRight; -moz-animation-name: fadeOutRight; -ms-animation-name: fadeOutRight; -o-animation-name: fadeOutRight; animation-name: fadeOutRight; }
+
+@-webkit-keyframes fadeOutUpBig { 0% { opacity: 1; -webkit-transform: translateY(0); }
+  100% { opacity: 0; -webkit-transform: translateY(-2000px); } }
+@-moz-keyframes fadeOutUpBig { 0% { opacity: 1; -moz-transform: translateY(0); }
+  100% { opacity: 0; -moz-transform: translateY(-2000px); } }
+@-ms-keyframes fadeOutUpBig { 0% { opacity: 1; -ms-transform: translateY(0); }
+  100% { opacity: 0; -ms-transform: translateY(-2000px); } }
+@-o-keyframes fadeOutUpBig { 0% { opacity: 1; -o-transform: translateY(0); }
+  100% { opacity: 0; -o-transform: translateY(-2000px); } }
+@keyframes fadeOutUpBig { 0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-2000px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutUpBig.scss */
+.fadeOutUpBig { -webkit-animation-name: fadeOutUpBig; -moz-animation-name: fadeOutUpBig; -ms-animation-name: fadeOutUpBig; -o-animation-name: fadeOutUpBig; animation-name: fadeOutUpBig; }
+
+@-webkit-keyframes fadeOutDownBig { 0% { opacity: 1; -webkit-transform: translateY(0); }
+  100% { opacity: 0; -webkit-transform: translateY(2000px); } }
+@-moz-keyframes fadeOutDownBig { 0% { opacity: 1; -moz-transform: translateY(0); }
+  100% { opacity: 0; -moz-transform: translateY(2000px); } }
+@-ms-keyframes fadeOutDownBig { 0% { opacity: 1; -ms-transform: translateY(0); }
+  100% { opacity: 0; -ms-transform: translateY(2000px); } }
+@-o-keyframes fadeOutDownBig { 0% { opacity: 1; -o-transform: translateY(0); }
+  100% { opacity: 0; -o-transform: translateY(2000px); } }
+@keyframes fadeOutDownBig { 0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(2000px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutDownBig.scss */
+.fadeOutDownBig { -webkit-animation-name: fadeOutDownBig; -moz-animation-name: fadeOutDownBig; -ms-animation-name: fadeOutDownBig; -o-animation-name: fadeOutDownBig; animation-name: fadeOutDownBig; }
+
+@-webkit-keyframes fadeOutLeftBig { 0% { opacity: 1; -webkit-transform: translateX(0); }
+  100% { opacity: 0; -webkit-transform: translateX(-2000px); } }
+@-moz-keyframes fadeOutLeftBig { 0% { opacity: 1; -moz-transform: translateX(0); }
+  100% { opacity: 0; -moz-transform: translateX(-2000px); } }
+@-ms-keyframes fadeOutLeftBig { 0% { opacity: 1; -ms-transform: translateX(0); }
+  100% { opacity: 0; -ms-transform: translateX(-2000px); } }
+@-o-keyframes fadeOutLeftBig { 0% { opacity: 1; -o-transform: translateX(0); }
+  100% { opacity: 0; -o-transform: translateX(-2000px); } }
+@keyframes fadeOutLeftBig { 0% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-2000px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutLeftBig.scss */
+.fadeOutLeftBig { -webkit-animation-name: fadeOutLeftBig; -moz-animation-name: fadeOutLeftBig; -ms-animation-name: fadeOutLeftBig; -o-animation-name: fadeOutLeftBig; animation-name: fadeOutLeftBig; }
+
+@-webkit-keyframes fadeOutRightBig { 0% { opacity: 1; -webkit-transform: translateX(0); }
+  100% { opacity: 0; -webkit-transform: translateX(2000px); } }
+@-moz-keyframes fadeOutRightBig { 0% { opacity: 1; -moz-transform: translateX(0); }
+  100% { opacity: 0; -moz-transform: translateX(2000px); } }
+@-ms-keyframes fadeOutRightBig { 0% { opacity: 1; -ms-transform: translateX(0); }
+  100% { opacity: 0; -ms-transform: translateX(2000px); } }
+@-o-keyframes fadeOutRightBig { 0% { opacity: 1; -o-transform: translateX(0); }
+  100% { opacity: 0; -o-transform: translateX(2000px); } }
+@keyframes fadeOutRightBig { 0% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(2000px); } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/fading-exits/_fadeOutRightBig.scss */
+.fadeOutRightBig { -webkit-animation-name: fadeOutRightBig; -moz-animation-name: fadeOutRightBig; -ms-animation-name: fadeOutRightBig; -o-animation-name: fadeOutRightBig; animation-name: fadeOutRightBig; }
+
+@-webkit-keyframes bounceIn { 0% { opacity: 0; -webkit-transform: scale(0.3); }
+  50% { opacity: 1; -webkit-transform: scale(1.05); }
+  70% { -webkit-transform: scale(0.9); }
+  100% { -webkit-transform: scale(1); } }
+@-moz-keyframes bounceIn { 0% { opacity: 0; -moz-transform: scale(0.3); }
+  50% { opacity: 1; -moz-transform: scale(1.05); }
+  70% { -moz-transform: scale(0.9); }
+  100% { -moz-transform: scale(1); } }
+@-ms-keyframes bounceIn { 0% { opacity: 0; -ms-transform: scale(0.3); }
+  50% { opacity: 1; -ms-transform: scale(1.05); }
+  70% { -ms-transform: scale(0.9); }
+  100% { -ms-transform: scale(1); } }
+@-o-keyframes bounceIn { 0% { opacity: 0; -o-transform: scale(0.3); }
+  50% { opacity: 1; -o-transform: scale(1.05); }
+  70% { -o-transform: scale(0.9); }
+  100% { -o-transform: scale(1); } }
+@keyframes bounceIn { 0% { opacity: 0; transform: scale(0.3); }
+  50% { opacity: 1; transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-entrances/_bounceIn.scss */
+.bounceIn { -webkit-animation-name: bounceIn; -moz-animation-name: bounceIn; -ms-animation-name: bounceIn; -o-animation-name: bounceIn; animation-name: bounceIn; }
+
+@-webkit-keyframes bounceInDown { 0% { opacity: 0; -webkit-transform: translateY(-2000px); }
+  60% { opacity: 1; -webkit-transform: translateY(30px); }
+  80% { -webkit-transform: translateY(-10px); }
+  100% { -webkit-transform: translateY(0); } }
+@-moz-keyframes bounceInDown { 0% { opacity: 0; -moz-transform: translateY(-2000px); }
+  60% { opacity: 1; -moz-transform: translateY(30px); }
+  80% { -moz-transform: translateY(-10px); }
+  100% { -moz-transform: translateY(0); } }
+@-ms-keyframes bounceInDown { 0% { opacity: 0; -ms-transform: translateY(-2000px); }
+  60% { opacity: 1; -ms-transform: translateY(30px); }
+  80% { -ms-transform: translateY(-10px); }
+  100% { -ms-transform: translateY(0); } }
+@-o-keyframes bounceInDown { 0% { opacity: 0; -o-transform: translateY(-2000px); }
+  60% { opacity: 1; -o-transform: translateY(30px); }
+  80% { -o-transform: translateY(-10px); }
+  100% { -o-transform: translateY(0); } }
+@keyframes bounceInDown { 0% { opacity: 0; transform: translateY(-2000px); }
+  60% { opacity: 1; transform: translateY(30px); }
+  80% { transform: translateY(-10px); }
+  100% { transform: translateY(0); } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-entrances/_bounceInDown.scss */
+.bounceInDown { -webkit-animation-name: bounceInDown; -moz-animation-name: bounceInDown; -ms-animation-name: bounceInDown; -o-animation-name: bounceInDown; animation-name: bounceInDown; }
+
+@-webkit-keyframes bounceInUp { 0% { opacity: 0; -webkit-transform: translateY(2000px); }
+  60% { opacity: 1; -webkit-transform: translateY(-30px); }
+  80% { -webkit-transform: translateY(10px); }
+  100% { -webkit-transform: translateY(0); } }
+@-moz-keyframes bounceInUp { 0% { opacity: 0; -moz-transform: translateY(2000px); }
+  60% { opacity: 1; -moz-transform: translateY(-30px); }
+  80% { -moz-transform: translateY(10px); }
+  100% { -moz-transform: translateY(0); } }
+@-ms-keyframes bounceInUp { 0% { opacity: 0; -ms-transform: translateY(2000px); }
+  60% { opacity: 1; -ms-transform: translateY(-30px); }
+  80% { -ms-transform: translateY(10px); }
+  100% { -ms-transform: translateY(0); } }
+@-o-keyframes bounceInUp { 0% { opacity: 0; -o-transform: translateY(2000px); }
+  60% { opacity: 1; -o-transform: translateY(-30px); }
+  80% { -o-transform: translateY(10px); }
+  100% { -o-transform: translateY(0); } }
+@keyframes bounceInUp { 0% { opacity: 0; transform: translateY(2000px); }
+  60% { opacity: 1; transform: translateY(-30px); }
+  80% { transform: translateY(10px); }
+  100% { transform: translateY(0); } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-entrances/_bounceInUp.scss */
+.bounceInUp { -webkit-animation-name: bounceInUp; -moz-animation-name: bounceInUp; -ms-animation-name: bounceInUp; -o-animation-name: bounceInUp; animation-name: bounceInUp; }
+
+@-webkit-keyframes bounceInLeft { 0% { opacity: 0; -webkit-transform: translateX(-2000px); }
+  60% { opacity: 1; -webkit-transform: translateX(30px); }
+  80% { -webkit-transform: translateX(-10px); }
+  100% { -webkit-transform: translateX(0); } }
+@-moz-keyframes bounceInLeft { 0% { opacity: 0; -moz-transform: translateX(-2000px); }
+  60% { opacity: 1; -moz-transform: translateX(30px); }
+  80% { -moz-transform: translateX(-10px); }
+  100% { -moz-transform: translateX(0); } }
+@-ms-keyframes bounceInLeft { 0% { opacity: 0; -ms-transform: translateX(-2000px); }
+  60% { opacity: 1; -ms-transform: translateX(30px); }
+  80% { -ms-transform: translateX(-10px); }
+  100% { -ms-transform: translateX(0); } }
+@-o-keyframes bounceInLeft { 0% { opacity: 0; -o-transform: translateX(-2000px); }
+  60% { opacity: 1; -o-transform: translateX(30px); }
+  80% { -o-transform: translateX(-10px); }
+  100% { -o-transform: translateX(0); } }
+@keyframes bounceInLeft { 0% { opacity: 0; transform: translateX(-2000px); }
+  60% { opacity: 1; transform: translateX(30px); }
+  80% { transform: translateX(-10px); }
+  100% { transform: translateX(0); } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-entrances/_bounceInLeft.scss */
+.bounceInLeft { -webkit-animation-name: bounceInLeft; -moz-animation-name: bounceInLeft; -ms-animation-name: bounceInLeft; -o-animation-name: bounceInLeft; animation-name: bounceInLeft; }
+
+@-webkit-keyframes bounceInRight { 0% { opacity: 0; -webkit-transform: translateX(2000px); }
+  60% { opacity: 1; -webkit-transform: translateX(-30px); }
+  80% { -webkit-transform: translateX(10px); }
+  100% { -webkit-transform: translateX(0); } }
+@-moz-keyframes bounceInRight { 0% { opacity: 0; -moz-transform: translateX(2000px); }
+  60% { opacity: 1; -moz-transform: translateX(-30px); }
+  80% { -moz-transform: translateX(10px); }
+  100% { -moz-transform: translateX(0); } }
+@-ms-keyframes bounceInRight { 0% { opacity: 0; -ms-transform: translateX(2000px); }
+  60% { opacity: 1; -ms-transform: translateX(-30px); }
+  80% { -ms-transform: translateX(10px); }
+  100% { -ms-transform: translateX(0); } }
+@-o-keyframes bounceInRight { 0% { opacity: 0; -o-transform: translateX(2000px); }
+  60% { opacity: 1; -o-transform: translateX(-30px); }
+  80% { -o-transform: translateX(10px); }
+  100% { -o-transform: translateX(0); } }
+@keyframes bounceInRight { 0% { opacity: 0; transform: translateX(2000px); }
+  60% { opacity: 1; transform: translateX(-30px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-entrances/_bounceInRight.scss */
+.bounceInRight { -webkit-animation-name: bounceInRight; -moz-animation-name: bounceInRight; -ms-animation-name: bounceInRight; -o-animation-name: bounceInRight; animation-name: bounceInRight; }
+
+@-webkit-keyframes bounceOut { 0% { -webkit-transform: scale(1); }
+  25% { -webkit-transform: scale(0.95); }
+  50% { opacity: 1; -webkit-transform: scale(1.1); }
+  100% { opacity: 0; -webkit-transform: scale(0.3); } }
+@-moz-keyframes bounceOut { 0% { -moz-transform: scale(1); }
+  25% { -moz-transform: scale(0.95); }
+  50% { opacity: 1; -moz-transform: scale(1.1); }
+  100% { opacity: 0; -moz-transform: scale(0.3); } }
+@-ms-keyframes bounceOut { 0% { -ms-transform: scale(1); }
+  25% { -ms-transform: scale(0.95); }
+  50% { opacity: 1; -ms-transform: scale(1.1); }
+  100% { opacity: 0; -ms-transform: scale(0.3); } }
+@-o-keyframes bounceOut { 0% { -o-transform: scale(1); }
+  25% { -o-transform: scale(0.95); }
+  50% { opacity: 1; -o-transform: scale(1.1); }
+  100% { opacity: 0; -o-transform: scale(0.3); } }
+@keyframes bounceOut { 0% { transform: scale(1); }
+  25% { transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0; transform: scale(0.3); } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-exits/_bounceOut.scss */
+.bounceOut { -webkit-animation-name: bounceOut; -moz-animation-name: bounceOut; -ms-animation-name: bounceOut; -o-animation-name: bounceOut; animation-name: bounceOut; }
+
+@-webkit-keyframes bounceOutDown { 0% { -webkit-transform: translateY(0); }
+  20% { opacity: 1; -webkit-transform: translateY(-20px); }
+  100% { opacity: 0; -webkit-transform: translateY(2000px); } }
+@-moz-keyframes bounceOutDown { 0% { -moz-transform: translateY(0); }
+  20% { opacity: 1; -moz-transform: translateY(-20px); }
+  100% { opacity: 0; -moz-transform: translateY(2000px); } }
+@-ms-keyframes bounceOutDown { 0% { -ms-transform: translateY(0); }
+  20% { opacity: 1; -ms-transform: translateY(-20px); }
+  100% { opacity: 0; -ms-transform: translateY(2000px); } }
+@-o-keyframes bounceOutDown { 0% { -o-transform: translateY(0); }
+  20% { opacity: 1; -o-transform: translateY(-20px); }
+  100% { opacity: 0; -o-transform: translateY(2000px); } }
+@keyframes bounceOutDown { 0% { transform: translateY(0); }
+  20% { opacity: 1; transform: translateY(-20px); }
+  100% { opacity: 0; transform: translateY(2000px); } }
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-exits/_bounceOutDown.scss */
+.bounceOutDown { -webkit-animation-name: bounceOutDown; -moz-animation-name: bounceOutDown; -ms-animation-name: bounceOutDown; -o-animation-name: bounceOutDown; animation-name: bounceOutDown; }
+
+@-webkit-keyframes bounceOutUp { 0% { -webkit-transform: translateY(0); }
+  20% { opacity: 1; -webkit-transform: translateY(20px); }
+  100% { opacity: 0; -webkit-transform: translateY(-2000px); } }
+@-moz-keyframes bounceOutUp { 0% { -moz-transform: translateY(0); }
+  20% { opacity: 1; -moz-transform: translateY(20px); }
+  100% { opacity: 0; -moz-transform: translateY(-2000px); } }
+@-ms-keyframes bounceOutUp { 0% { -ms-transform: translateY(0); }
+  20% { opacity: 1; -ms-transform: translateY(20px); }
+  100% { opacity: 0; -ms-transform: translateY(-2000px); } }
+@-o-keyframes bounceOutUp { 0% { -o-transform: translateY(0); }
+  20% { opacity: 1; -o-transform: translateY(20px); }
+  100% { opacity: 0; -o-transform: translateY(-2000px); } }
+@keyframes bounceOutUp { 0% { transform: translateY(0); }
+  20% { opacity: 1; transform: translateY(20px); }
+  100% { opacity: 0; transform: translateY(-2000px); } }
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-exits/_bounceOutUp.scss */
+.bounceOutUp { -webkit-animation-name: bounceOutUp; -moz-animation-name: bounceOutUp; -ms-animation-name: bounceOutUp; -o-animation-name: bounceOutUp; animation-name: bounceOutUp; }
+
+@-webkit-keyframes bounceOutLeft { 0% { -webkit-transform: translateX(0); }
+  20% { opacity: 1; -webkit-transform: translateX(20px); }
+  100% { opacity: 0; -webkit-transform: translateX(-2000px); } }
+@-moz-keyframes bounceOutLeft { 0% { -moz-transform: translateX(0); }
+  20% { opacity: 1; -moz-transform: translateX(20px); }
+  100% { opacity: 0; -moz-transform: translateX(-2000px); } }
+@-ms-keyframes bounceOutLeft { 0% { -ms-transform: translateX(0); }
+  20% { opacity: 1; -ms-transform: translateX(20px); }
+  100% { opacity: 0; -ms-transform: translateX(-2000px); } }
+@-o-keyframes bounceOutLeft { 0% { -o-transform: translateX(0); }
+  20% { opacity: 1; -o-transform: translateX(20px); }
+  100% { opacity: 0; -o-transform: translateX(-2000px); } }
+@keyframes bounceOutLeft { 0% { transform: translateX(0); }
+  20% { opacity: 1; transform: translateX(20px); }
+  100% { opacity: 0; transform: translateX(-2000px); } }
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-exits/_bounceOutLeft.scss */
+.bounceOutLeft { -webkit-animation-name: bounceOutLeft; -moz-animation-name: bounceOutLeft; -ms-animation-name: bounceOutLeft; -o-animation-name: bounceOutLeft; animation-name: bounceOutLeft; }
+
+@-webkit-keyframes bounceOutRight { 0% { -webkit-transform: translateX(0); }
+  20% { opacity: 1; -webkit-transform: translateX(-20px); }
+  100% { opacity: 0; -webkit-transform: translateX(2000px); } }
+@-moz-keyframes bounceOutRight { 0% { -moz-transform: translateX(0); }
+  20% { opacity: 1; -moz-transform: translateX(-20px); }
+  100% { opacity: 0; -moz-transform: translateX(2000px); } }
+@-ms-keyframes bounceOutRight { 0% { -ms-transform: translateX(0); }
+  20% { opacity: 1; -ms-transform: translateX(-20px); }
+  100% { opacity: 0; -ms-transform: translateX(2000px); } }
+@-o-keyframes bounceOutRight { 0% { -o-transform: translateX(0); }
+  20% { opacity: 1; -o-transform: translateX(-20px); }
+  100% { opacity: 0; -o-transform: translateX(2000px); } }
+@keyframes bounceOutRight { 0% { transform: translateX(0); }
+  20% { opacity: 1; transform: translateX(-20px); }
+  100% { opacity: 0; transform: translateX(2000px); } }
+/* line 32, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/bouncing-exits/_bounceOutRight.scss */
+.bounceOutRight { -webkit-animation-name: bounceOutRight; -moz-animation-name: bounceOutRight; -ms-animation-name: bounceOutRight; -o-animation-name: bounceOutRight; animation-name: bounceOutRight; }
+
+@-webkit-keyframes rotateIn { 0% { -webkit-transform-origin: center center; -webkit-transform: rotate(-200deg); opacity: 0; }
+  100% { -webkit-transform-origin: center center; -webkit-transform: rotate(0); opacity: 1; } }
+@-moz-keyframes rotateIn { 0% { -moz-transform-origin: center center; -moz-transform: rotate(-200deg); opacity: 0; }
+  100% { -moz-transform-origin: center center; -moz-transform: rotate(0); opacity: 1; } }
+@-ms-keyframes rotateIn { 0% { -ms-transform-origin: center center; -ms-transform: rotate(-200deg); opacity: 0; }
+  100% { -ms-transform-origin: center center; -ms-transform: rotate(0); opacity: 1; } }
+@-o-keyframes rotateIn { 0% { -o-transform-origin: center center; -o-transform: rotate(-200deg); opacity: 0; }
+  100% { -o-transform-origin: center center; -o-transform: rotate(0); opacity: 1; } }
+@keyframes rotateIn { 0% { transform-origin: center center; transform: rotate(-200deg); opacity: 0; }
+  100% { transform-origin: center center; transform: rotate(0); opacity: 1; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-entrances/_rotateIn.scss */
+.rotateIn { -webkit-animation-name: rotateIn; -moz-animation-name: rotateIn; -ms-animation-name: rotateIn; -o-animation-name: rotateIn; animation-name: rotateIn; }
+
+@-webkit-keyframes rotateInDownLeft { 0% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(-90deg); opacity: 0; }
+  100% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(0); opacity: 1; } }
+@-moz-keyframes rotateInDownLeft { 0% { -moz-transform-origin: left bottom; -moz-transform: rotate(-90deg); opacity: 0; }
+  100% { -moz-transform-origin: left bottom; -moz-transform: rotate(0); opacity: 1; } }
+@-ms-keyframes rotateInDownLeft { 0% { -ms-transform-origin: left bottom; -ms-transform: rotate(-90deg); opacity: 0; }
+  100% { -ms-transform-origin: left bottom; -ms-transform: rotate(0); opacity: 1; } }
+@-o-keyframes rotateInDownLeft { 0% { -o-transform-origin: left bottom; -o-transform: rotate(-90deg); opacity: 0; }
+  100% { -o-transform-origin: left bottom; -o-transform: rotate(0); opacity: 1; } }
+@keyframes rotateInDownLeft { 0% { transform-origin: left bottom; transform: rotate(-90deg); opacity: 0; }
+  100% { transform-origin: left bottom; transform: rotate(0); opacity: 1; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-entrances/_rotateInDownLeft.scss */
+.rotateInDownLeft { -webkit-animation-name: rotateInDownLeft; -moz-animation-name: rotateInDownLeft; -ms-animation-name: rotateInDownLeft; -o-animation-name: rotateInDownLeft; animation-name: rotateInDownLeft; }
+
+@-webkit-keyframes rotateInDownRight { 0% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(90deg); opacity: 0; }
+  100% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(0); opacity: 1; } }
+@-moz-keyframes rotateInDownRight { 0% { -moz-transform-origin: right bottom; -moz-transform: rotate(90deg); opacity: 0; }
+  100% { -moz-transform-origin: right bottom; -moz-transform: rotate(0); opacity: 1; } }
+@-ms-keyframes rotateInDownRight { 0% { -ms-transform-origin: right bottom; -ms-transform: rotate(90deg); opacity: 0; }
+  100% { -ms-transform-origin: right bottom; -ms-transform: rotate(0); opacity: 1; } }
+@-o-keyframes rotateInDownRight { 0% { -o-transform-origin: right bottom; -o-transform: rotate(90deg); opacity: 0; }
+  100% { -o-transform-origin: right bottom; -o-transform: rotate(0); opacity: 1; } }
+@keyframes rotateInDownRight { 0% { transform-origin: right bottom; transform: rotate(90deg); opacity: 0; }
+  100% { transform-origin: right bottom; transform: rotate(0); opacity: 1; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-entrances/_rotateInDownRight.scss */
+.rotateInDownRight { -webkit-animation-name: rotateInDownRight; -moz-animation-name: rotateInDownRight; -ms-animation-name: rotateInDownRight; -o-animation-name: rotateInDownRight; animation-name: rotateInDownRight; }
+
+@-webkit-keyframes rotateInUpLeft { 0% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(90deg); opacity: 0; }
+  100% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(0); opacity: 1; } }
+@-moz-keyframes rotateInUpLeft { 0% { -moz-transform-origin: left bottom; -moz-transform: rotate(90deg); opacity: 0; }
+  100% { -moz-transform-origin: left bottom; -moz-transform: rotate(0); opacity: 1; } }
+@-ms-keyframes rotateInUpLeft { 0% { -ms-transform-origin: left bottom; -ms-transform: rotate(90deg); opacity: 0; }
+  100% { -ms-transform-origin: left bottom; -ms-transform: rotate(0); opacity: 1; } }
+@-o-keyframes rotateInUpLeft { 0% { -o-transform-origin: left bottom; -o-transform: rotate(90deg); opacity: 0; }
+  100% { -o-transform-origin: left bottom; -o-transform: rotate(0); opacity: 1; } }
+@keyframes rotateInUpLeft { 0% { transform-origin: left bottom; transform: rotate(90deg); opacity: 0; }
+  100% { transform-origin: left bottom; transform: rotate(0); opacity: 1; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-entrances/_rotateInUpLeft.scss */
+.rotateInUpLeft { -webkit-animation-name: rotateInUpLeft; -moz-animation-name: rotateInUpLeft; -ms-animation-name: rotateInUpLeft; -o-animation-name: rotateInUpLeft; animation-name: rotateInUpLeft; }
+
+@-webkit-keyframes rotateInUpRight { 0% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(-90deg); opacity: 0; }
+  100% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(0); opacity: 1; } }
+@-moz-keyframes rotateInUpRight { 0% { -moz-transform-origin: right bottom; -moz-transform: rotate(-90deg); opacity: 0; }
+  100% { -moz-transform-origin: right bottom; -moz-transform: rotate(0); opacity: 1; } }
+@-ms-keyframes rotateInUpRight { 0% { -ms-transform-origin: right bottom; -ms-transform: rotate(-90deg); opacity: 0; }
+  100% { -ms-transform-origin: right bottom; -ms-transform: rotate(0); opacity: 1; } }
+@-o-keyframes rotateInUpRight { 0% { -o-transform-origin: right bottom; -o-transform: rotate(-90deg); opacity: 0; }
+  100% { -o-transform-origin: right bottom; -o-transform: rotate(0); opacity: 1; } }
+@keyframes rotateInUpRight { 0% { transform-origin: right bottom; transform: rotate(-90deg); opacity: 0; }
+  100% { transform-origin: right bottom; transform: rotate(0); opacity: 1; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-entrances/_rotateInUpRight.scss */
+.rotateInUpRight { -webkit-animation-name: rotateInUpRight; -moz-animation-name: rotateInUpRight; -ms-animation-name: rotateInUpRight; -o-animation-name: rotateInUpRight; animation-name: rotateInUpRight; }
+
+@-webkit-keyframes rotateOut { 0% { -webkit-transform-origin: center center; -webkit-transform: rotate(0); opacity: 1; }
+  100% { -webkit-transform-origin: center center; -webkit-transform: rotate(200deg); opacity: 0; } }
+@-moz-keyframes rotateOut { 0% { -moz-transform-origin: center center; -moz-transform: rotate(0); opacity: 1; }
+  100% { -moz-transform-origin: center center; -moz-transform: rotate(200deg); opacity: 0; } }
+@-ms-keyframes rotateOut { 0% { -ms-transform-origin: center center; -ms-transform: rotate(0); opacity: 1; }
+  100% { -ms-transform-origin: center center; -ms-transform: rotate(200deg); opacity: 0; } }
+@-o-keyframes rotateOut { 0% { -o-transform-origin: center center; -o-transform: rotate(0); opacity: 1; }
+  100% { -o-transform-origin: center center; -o-transform: rotate(200deg); opacity: 0; } }
+@keyframes rotateOut { 0% { transform-origin: center center; transform: rotate(0); opacity: 1; }
+  100% { transform-origin: center center; transform: rotate(200deg); opacity: 0; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-exits/_rotateOut.scss */
+.rotateOut { -webkit-animation-name: rotateOut; -moz-animation-name: rotateOut; -ms-animation-name: rotateOut; -o-animation-name: rotateOut; animation-name: rotateOut; }
+
+@-webkit-keyframes rotateOutDownLeft { 0% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(0); opacity: 1; }
+  100% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(90deg); opacity: 0; } }
+@-moz-keyframes rotateOutDownLeft { 0% { -moz-transform-origin: left bottom; -moz-transform: rotate(0); opacity: 1; }
+  100% { -moz-transform-origin: left bottom; -moz-transform: rotate(90deg); opacity: 0; } }
+@-ms-keyframes rotateOutDownLeft { 0% { -ms-transform-origin: left bottom; -ms-transform: rotate(0); opacity: 1; }
+  100% { -ms-transform-origin: left bottom; -ms-transform: rotate(90deg); opacity: 0; } }
+@-o-keyframes rotateOutDownLeft { 0% { -o-transform-origin: left bottom; -o-transform: rotate(0); opacity: 1; }
+  100% { -o-transform-origin: left bottom; -o-transform: rotate(90deg); opacity: 0; } }
+@keyframes rotateOutDownLeft { 0% { transform-origin: left bottom; transform: rotate(0); opacity: 1; }
+  100% { transform-origin: left bottom; transform: rotate(90deg); opacity: 0; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-exits/_rotateOutDownLeft.scss */
+.rotateOutDownLeft { -webkit-animation-name: rotateOutDownLeft; -moz-animation-name: rotateOutDownLeft; -ms-animation-name: rotateOutDownLeft; -o-animation-name: rotateOutDownLeft; animation-name: rotateOutDownLeft; }
+
+@-webkit-keyframes rotateOutDownRight { 0% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(0); opacity: 1; }
+  100% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(-90deg); opacity: 0; } }
+@-moz-keyframes rotateOutDownRight { 0% { -moz-transform-origin: right bottom; -moz-transform: rotate(0); opacity: 1; }
+  100% { -moz-transform-origin: right bottom; -moz-transform: rotate(-90deg); opacity: 0; } }
+@-ms-keyframes rotateOutDownRight { 0% { -ms-transform-origin: right bottom; -ms-transform: rotate(0); opacity: 1; }
+  100% { -ms-transform-origin: right bottom; -ms-transform: rotate(-90deg); opacity: 0; } }
+@-o-keyframes rotateOutDownRight { 0% { -o-transform-origin: right bottom; -o-transform: rotate(0); opacity: 1; }
+  100% { -o-transform-origin: right bottom; -o-transform: rotate(-90deg); opacity: 0; } }
+@keyframes rotateOutDownRight { 0% { transform-origin: right bottom; transform: rotate(0); opacity: 1; }
+  100% { transform-origin: right bottom; transform: rotate(-90deg); opacity: 0; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-exits/_rotateOutDownRight.scss */
+.rotateOutDownRight { -webkit-animation-name: rotateOutDownRight; -moz-animation-name: rotateOutDownRight; -ms-animation-name: rotateOutDownRight; -o-animation-name: rotateOutDownRight; animation-name: rotateOutDownRight; }
+
+@-webkit-keyframes rotateOutUpLeft { 0% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(0); opacity: 1; }
+  100% { -webkit-transform-origin: left bottom; -webkit-transform: rotate(-90deg); opacity: 0; } }
+@-moz-keyframes rotateOutUpLeft { 0% { -moz-transform-origin: left bottom; -moz-transform: rotate(0); opacity: 1; }
+  100% { -moz-transform-origin: left bottom; -moz-transform: rotate(-90deg); opacity: 0; } }
+@-ms-keyframes rotateOutUpLeft { 0% { -ms-transform-origin: left bottom; -ms-transform: rotate(0); opacity: 1; }
+  100% { -ms-transform-origin: left bottom; -ms-transform: rotate(-90deg); opacity: 0; } }
+@-o-keyframes rotateOutUpLeft { 0% { -o-transform-origin: left bottom; -o-transform: rotate(0); opacity: 1; }
+  100% { -o-transform-origin: left bottom; -o-transform: rotate(-90deg); opacity: 0; } }
+@keyframes rotateOutUpLeft { 0% { transform-origin: left bottom; transform: rotate(0); opacity: 1; }
+  100% { transform-origin: left bottom; transform: rotate(-90deg); opacity: 0; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-exits/_rotateOutUpLeft.scss */
+.rotateOutUpLeft { -webkit-animation-name: rotateOutUpLeft; -moz-animation-name: rotateOutUpLeft; -ms-animation-name: rotateOutUpLeft; -o-animation-name: rotateOutUpLeft; animation-name: rotateOutUpLeft; }
+
+@-webkit-keyframes rotateOutUpRight { 0% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(0); opacity: 1; }
+  100% { -webkit-transform-origin: right bottom; -webkit-transform: rotate(90deg); opacity: 0; } }
+@-moz-keyframes rotateOutUpRight { 0% { -moz-transform-origin: right bottom; -moz-transform: rotate(0); opacity: 1; }
+  100% { -moz-transform-origin: right bottom; -moz-transform: rotate(90deg); opacity: 0; } }
+@-ms-keyframes rotateOutUpRight { 0% { -ms-transform-origin: right bottom; -ms-transform: rotate(0); opacity: 1; }
+  100% { -ms-transform-origin: right bottom; -ms-transform: rotate(90deg); opacity: 0; } }
+@-o-keyframes rotateOutUpRight { 0% { -o-transform-origin: right bottom; -o-transform: rotate(0); opacity: 1; }
+  100% { -o-transform-origin: right bottom; -o-transform: rotate(90deg); opacity: 0; } }
+@keyframes rotateOutUpRight { 0% { transform-origin: right bottom; transform: rotate(0); opacity: 1; }
+  100% { transform-origin: right bottom; transform: rotate(90deg); opacity: 0; } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/rotating-exits/_rotateOutUpRight.scss */
+.rotateOutUpRight { -webkit-animation-name: rotateOutUpRight; -moz-animation-name: rotateOutUpRight; -ms-animation-name: rotateOutUpRight; -o-animation-name: rotateOutUpRight; animation-name: rotateOutUpRight; }
+
+@-webkit-keyframes hinge { 0% { -webkit-animation-timing-function: ease-in-out, webkit; -moz-animation-timing-function: ease-in-out, webkit; -ms-animation-timing-function: ease-in-out, webkit; -o-animation-timing-function: ease-in-out, webkit; animation-timing-function: ease-in-out, webkit; -webkit-transform: rotate(0); -webkit-transform-origin: top left; }
+  20%, 60% { -webkit-animation-timing-function: ease-in-out, webkit; -moz-animation-timing-function: ease-in-out, webkit; -ms-animation-timing-function: ease-in-out, webkit; -o-animation-timing-function: ease-in-out, webkit; animation-timing-function: ease-in-out, webkit; -webkit-transform: rotate(80deg); -webkit-transform-origin: top left; }
+  40% { -webkit-transform: rotate(60deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out, webkit; -moz-animation-timing-function: ease-in-out, webkit; -ms-animation-timing-function: ease-in-out, webkit; -o-animation-timing-function: ease-in-out, webkit; animation-timing-function: ease-in-out, webkit; }
+  80% { opacity: 1; -webkit-animation-timing-function: ease-in-out, webkit; -moz-animation-timing-function: ease-in-out, webkit; -ms-animation-timing-function: ease-in-out, webkit; -o-animation-timing-function: ease-in-out, webkit; animation-timing-function: ease-in-out, webkit; -webkit-transform: rotate(60deg) translateY(0); -webkit-transform-origin: top left; }
+  100% { -webkit-transform: translateY(700px); opacity: 0; } }
+@-moz-keyframes hinge { 0% { -webkit-animation-timing-function: ease-in-out, moz; -moz-animation-timing-function: ease-in-out, moz; -ms-animation-timing-function: ease-in-out, moz; -o-animation-timing-function: ease-in-out, moz; animation-timing-function: ease-in-out, moz; -moz-transform: rotate(0); -moz-transform-origin: top left; }
+  20%, 60% { -webkit-animation-timing-function: ease-in-out, moz; -moz-animation-timing-function: ease-in-out, moz; -ms-animation-timing-function: ease-in-out, moz; -o-animation-timing-function: ease-in-out, moz; animation-timing-function: ease-in-out, moz; -moz-transform: rotate(80deg); -moz-transform-origin: top left; }
+  40% { -moz-transform: rotate(60deg); -moz-transform-origin: top left; -webkit-animation-timing-function: ease-in-out, moz; -moz-animation-timing-function: ease-in-out, moz; -ms-animation-timing-function: ease-in-out, moz; -o-animation-timing-function: ease-in-out, moz; animation-timing-function: ease-in-out, moz; }
+  80% { opacity: 1; -webkit-animation-timing-function: ease-in-out, moz; -moz-animation-timing-function: ease-in-out, moz; -ms-animation-timing-function: ease-in-out, moz; -o-animation-timing-function: ease-in-out, moz; animation-timing-function: ease-in-out, moz; -moz-transform: rotate(60deg) translateY(0); -moz-transform-origin: top left; }
+  100% { -moz-transform: translateY(700px); opacity: 0; } }
+@-ms-keyframes hinge { 0% { -webkit-animation-timing-function: ease-in-out, ms; -moz-animation-timing-function: ease-in-out, ms; -ms-animation-timing-function: ease-in-out, ms; -o-animation-timing-function: ease-in-out, ms; animation-timing-function: ease-in-out, ms; -ms-transform: rotate(0); -ms-transform-origin: top left; }
+  20%, 60% { -webkit-animation-timing-function: ease-in-out, ms; -moz-animation-timing-function: ease-in-out, ms; -ms-animation-timing-function: ease-in-out, ms; -o-animation-timing-function: ease-in-out, ms; animation-timing-function: ease-in-out, ms; -ms-transform: rotate(80deg); -ms-transform-origin: top left; }
+  40% { -ms-transform: rotate(60deg); -ms-transform-origin: top left; -webkit-animation-timing-function: ease-in-out, ms; -moz-animation-timing-function: ease-in-out, ms; -ms-animation-timing-function: ease-in-out, ms; -o-animation-timing-function: ease-in-out, ms; animation-timing-function: ease-in-out, ms; }
+  80% { opacity: 1; -webkit-animation-timing-function: ease-in-out, ms; -moz-animation-timing-function: ease-in-out, ms; -ms-animation-timing-function: ease-in-out, ms; -o-animation-timing-function: ease-in-out, ms; animation-timing-function: ease-in-out, ms; -ms-transform: rotate(60deg) translateY(0); -ms-transform-origin: top left; }
+  100% { -ms-transform: translateY(700px); opacity: 0; } }
+@-o-keyframes hinge { 0% { -webkit-animation-timing-function: ease-in-out, o; -moz-animation-timing-function: ease-in-out, o; -ms-animation-timing-function: ease-in-out, o; -o-animation-timing-function: ease-in-out, o; animation-timing-function: ease-in-out, o; -o-transform: rotate(0); -o-transform-origin: top left; }
+  20%, 60% { -webkit-animation-timing-function: ease-in-out, o; -moz-animation-timing-function: ease-in-out, o; -ms-animation-timing-function: ease-in-out, o; -o-animation-timing-function: ease-in-out, o; animation-timing-function: ease-in-out, o; -o-transform: rotate(80deg); -o-transform-origin: top left; }
+  40% { -o-transform: rotate(60deg); -o-transform-origin: top left; -webkit-animation-timing-function: ease-in-out, o; -moz-animation-timing-function: ease-in-out, o; -ms-animation-timing-function: ease-in-out, o; -o-animation-timing-function: ease-in-out, o; animation-timing-function: ease-in-out, o; }
+  80% { opacity: 1; -webkit-animation-timing-function: ease-in-out, o; -moz-animation-timing-function: ease-in-out, o; -ms-animation-timing-function: ease-in-out, o; -o-animation-timing-function: ease-in-out, o; animation-timing-function: ease-in-out, o; -o-transform: rotate(60deg) translateY(0); -o-transform-origin: top left; }
+  100% { -o-transform: translateY(700px); opacity: 0; } }
+@keyframes hinge { 0% { -webkit-animation-timing-function: ease-in-out, none; -moz-animation-timing-function: ease-in-out, none; -ms-animation-timing-function: ease-in-out, none; -o-animation-timing-function: ease-in-out, none; animation-timing-function: ease-in-out, none; transform: rotate(0); transform-origin: top left; }
+  20%, 60% { -webkit-animation-timing-function: ease-in-out, none; -moz-animation-timing-function: ease-in-out, none; -ms-animation-timing-function: ease-in-out, none; -o-animation-timing-function: ease-in-out, none; animation-timing-function: ease-in-out, none; transform: rotate(80deg); transform-origin: top left; }
+  40% { transform: rotate(60deg); transform-origin: top left; -webkit-animation-timing-function: ease-in-out, none; -moz-animation-timing-function: ease-in-out, none; -ms-animation-timing-function: ease-in-out, none; -o-animation-timing-function: ease-in-out, none; animation-timing-function: ease-in-out, none; }
+  80% { opacity: 1; -webkit-animation-timing-function: ease-in-out, none; -moz-animation-timing-function: ease-in-out, none; -ms-animation-timing-function: ease-in-out, none; -o-animation-timing-function: ease-in-out, none; animation-timing-function: ease-in-out, none; transform: rotate(60deg) translateY(0); transform-origin: top left; }
+  100% { transform: translateY(700px); opacity: 0; } }
+/* line 46, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/specials/_hinge.scss */
+.hinge { -webkit-animation-name: hinge; -moz-animation-name: hinge; -ms-animation-name: hinge; -o-animation-name: hinge; animation-name: hinge; }
+
+@-webkit-keyframes rollIn { 0% { opacity: 0; -webkit-transform: translateX(-100%) rotate(-120deg); }
+  100% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); } }
+@-moz-keyframes rollIn { 0% { opacity: 0; -moz-transform: translateX(-100%) rotate(-120deg); }
+  100% { opacity: 1; -moz-transform: translateX(0px) rotate(0deg); } }
+@-ms-keyframes rollIn { 0% { opacity: 0; -ms-transform: translateX(-100%) rotate(-120deg); }
+  100% { opacity: 1; -ms-transform: translateX(0px) rotate(0deg); } }
+@-o-keyframes rollIn { 0% { opacity: 0; -o-transform: translateX(-100%) rotate(-120deg); }
+  100% { opacity: 1; -o-transform: translateX(0px) rotate(0deg); } }
+@keyframes rollIn { 0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); }
+  100% { opacity: 1; transform: translateX(0px) rotate(0deg); } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/specials/_rollIn.scss */
+.rollIn { -webkit-animation-name: rollIn; -moz-animation-name: rollIn; -ms-animation-name: rollIn; -o-animation-name: rollIn; animation-name: rollIn; }
+
+@-webkit-keyframes rollOut { 0% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); }
+  100% { opacity: 0; -webkit-transform: translateX(100%) rotate(120deg); } }
+@-moz-keyframes rollOut { 0% { opacity: 1; -moz-transform: translateX(0px) rotate(0deg); }
+  100% { opacity: 0; -moz-transform: translateX(100%) rotate(120deg); } }
+@-ms-keyframes rollOut { 0% { opacity: 1; -ms-transform: translateX(0px) rotate(0deg); }
+  100% { opacity: 0; -ms-transform: translateX(100%) rotate(120deg); } }
+@-o-keyframes rollOut { 0% { opacity: 1; -o-transform: translateX(0px) rotate(0deg); }
+  100% { opacity: 0; -o-transform: translateX(100%) rotate(120deg); } }
+@keyframes rollOut { 0% { opacity: 1; transform: translateX(0px) rotate(0deg); }
+  100% { opacity: 0; transform: translateX(100%) rotate(120deg); } }
+/* line 31, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/specials/_rollOut.scss */
+.rollOut { -webkit-animation-name: rollOut; -moz-animation-name: rollOut; -ms-animation-name: rollOut; -o-animation-name: rollOut; animation-name: rollOut; }
+
+@-webkit-keyframes flip { 0% { -webkit-transform: perspective(400px) rotateY(0); -webkit-animation-timing-function: ease-out; }
+  40% { -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg); -webkit-animation-timing-function: ease-out; }
+  50% { -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); -webkit-animation-timing-function: ease-in; }
+  80% { -webkit-transform: perspective(400px) rotateY(360deg) scale(0.95); -webkit-animation-timing-function: ease-in; }
+  100% { -webkit-transform: perspective(400px) scale(1); -webkit-animation-timing-function: ease-in; } }
+@-moz-keyframes flip { 0% { -moz-transform: perspective(400px) rotateY(0); -moz-animation-timing-function: ease-out; }
+  40% { -moz-transform: perspective(400px) translateZ(150px) rotateY(170deg); -moz-animation-timing-function: ease-out; }
+  50% { -moz-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); -moz-animation-timing-function: ease-in; }
+  80% { -moz-transform: perspective(400px) rotateY(360deg) scale(0.95); -moz-animation-timing-function: ease-in; }
+  100% { -moz-transform: perspective(400px) scale(1); -moz-animation-timing-function: ease-in; } }
+@-ms-keyframes flip { 0% { -ms-transform: perspective(400px) rotateY(0); -ms-animation-timing-function: ease-out; }
+  40% { -ms-transform: perspective(400px) translateZ(150px) rotateY(170deg); -ms-animation-timing-function: ease-out; }
+  50% { -ms-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); -ms-animation-timing-function: ease-in; }
+  80% { -ms-transform: perspective(400px) rotateY(360deg) scale(0.95); -ms-animation-timing-function: ease-in; }
+  100% { -ms-transform: perspective(400px) scale(1); -ms-animation-timing-function: ease-in; } }
+@-o-keyframes flip { 0% { -o-transform: perspective(400px) rotateY(0); -o-animation-timing-function: ease-out; }
+  40% { -o-transform: perspective(400px) translateZ(150px) rotateY(170deg); -o-animation-timing-function: ease-out; }
+  50% { -o-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); -o-animation-timing-function: ease-in; }
+  80% { -o-transform: perspective(400px) rotateY(360deg) scale(0.95); -o-animation-timing-function: ease-in; }
+  100% { -o-transform: perspective(400px) scale(1); -o-animation-timing-function: ease-in; } }
+@keyframes flip { 0% { transform: perspective(400px) rotateY(0); animation-timing-function: ease-out; }
+  40% { transform: perspective(400px) translateZ(150px) rotateY(170deg); animation-timing-function: ease-out; }
+  50% { transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1); animation-timing-function: ease-in; }
+  80% { transform: perspective(400px) rotateY(360deg) scale(0.95); animation-timing-function: ease-in; }
+  100% { transform: perspective(400px) scale(1); animation-timing-function: ease-in; } }
+/* line 41, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/flippers/_flip.scss */
+.flip { -webkit-animation-name: flip; -moz-animation-name: flip; -ms-animation-name: flip; -o-animation-name: flip; animation-name: flip; -webkit-backface-visibility: visible !important; -moz-backface-visibility: visible !important; -ms-backface-visibility: visible !important; -o-backface-visibility: visible !important; backface-visibility: visible !important; }
+
+@-webkit-keyframes flipInX { 0% { -webkit-transform: perspective(400px) rotateX(90deg); opacity: 0; }
+  40% { -webkit-transform: perspective(400px) rotateX(-10deg); }
+  70% { -webkit-transform: perspective(400px) rotateX(10deg); }
+  100% { -webkit-transform: perspective(400px) rotateX(0deg); opacity: 1; } }
+@-moz-keyframes flipInX { 0% { -moz-transform: perspective(400px) rotateX(90deg); opacity: 0; }
+  40% { -moz-transform: perspective(400px) rotateX(-10deg); }
+  70% { -moz-transform: perspective(400px) rotateX(10deg); }
+  100% { -moz-transform: perspective(400px) rotateX(0deg); opacity: 1; } }
+@-ms-keyframes flipInX { 0% { -ms-transform: perspective(400px) rotateX(90deg); opacity: 0; }
+  40% { -ms-transform: perspective(400px) rotateX(-10deg); }
+  70% { -ms-transform: perspective(400px) rotateX(10deg); }
+  100% { -ms-transform: perspective(400px) rotateX(0deg); opacity: 1; } }
+@-o-keyframes flipInX { 0% { -o-transform: perspective(400px) rotateX(90deg); opacity: 0; }
+  40% { -o-transform: perspective(400px) rotateX(-10deg); }
+  70% { -o-transform: perspective(400px) rotateX(10deg); }
+  100% { -o-transform: perspective(400px) rotateX(0deg); opacity: 1; } }
+@keyframes flipInX { 0% { transform: perspective(400px) rotateX(90deg); opacity: 0; }
+  40% { transform: perspective(400px) rotateX(-10deg); }
+  70% { transform: perspective(400px) rotateX(10deg); }
+  100% { transform: perspective(400px) rotateX(0deg); opacity: 1; } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/flippers/_flipInX.scss */
+.flipInX { -webkit-animation-name: flipInX; -moz-animation-name: flipInX; -ms-animation-name: flipInX; -o-animation-name: flipInX; animation-name: flipInX; -webkit-backface-visibility: visible !important; -moz-backface-visibility: visible !important; -ms-backface-visibility: visible !important; -o-backface-visibility: visible !important; backface-visibility: visible !important; }
+
+@-webkit-keyframes flipOutX { 0% { -webkit-transform: perspective(400px) rotateX(0deg); opacity: 1; }
+  100% { -webkit-transform: perspective(400px) rotateX(90deg); opacity: 0; } }
+@-moz-keyframes flipOutX { 0% { -moz-transform: perspective(400px) rotateX(0deg); opacity: 1; }
+  100% { -moz-transform: perspective(400px) rotateX(90deg); opacity: 0; } }
+@-ms-keyframes flipOutX { 0% { -ms-transform: perspective(400px) rotateX(0deg); opacity: 1; }
+  100% { -ms-transform: perspective(400px) rotateX(90deg); opacity: 0; } }
+@-o-keyframes flipOutX { 0% { -o-transform: perspective(400px) rotateX(0deg); opacity: 1; }
+  100% { -o-transform: perspective(400px) rotateX(90deg); opacity: 0; } }
+@keyframes flipOutX { 0% { transform: perspective(400px) rotateX(0deg); opacity: 1; }
+  100% { transform: perspective(400px) rotateX(90deg); opacity: 0; } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/flippers/_flipOutX.scss */
+.flipOutX { -webkit-animation-name: flipOutX; -moz-animation-name: flipOutX; -ms-animation-name: flipOutX; -o-animation-name: flipOutX; animation-name: flipOutX; -webkit-backface-visibility: visible !important; -moz-backface-visibility: visible !important; -ms-backface-visibility: visible !important; -o-backface-visibility: visible !important; backface-visibility: visible !important; }
+
+@-webkit-keyframes flipInY { 0% { -webkit-transform: perspective(400px) rotateY(90deg); opacity: 0; }
+  40% { -webkit-transform: perspective(400px) rotateY(-10deg); }
+  70% { -webkit-transform: perspective(400px) rotateY(10deg); }
+  100% { -webkit-transform: perspective(400px) rotateY(0deg); opacity: 1; } }
+@-moz-keyframes flipInY { 0% { -moz-transform: perspective(400px) rotateY(90deg); opacity: 0; }
+  40% { -moz-transform: perspective(400px) rotateY(-10deg); }
+  70% { -moz-transform: perspective(400px) rotateY(10deg); }
+  100% { -moz-transform: perspective(400px) rotateY(0deg); opacity: 1; } }
+@-ms-keyframes flipInY { 0% { -ms-transform: perspective(400px) rotateY(90deg); opacity: 0; }
+  40% { -ms-transform: perspective(400px) rotateY(-10deg); }
+  70% { -ms-transform: perspective(400px) rotateY(10deg); }
+  100% { -ms-transform: perspective(400px) rotateY(0deg); opacity: 1; } }
+@-o-keyframes flipInY { 0% { -o-transform: perspective(400px) rotateY(90deg); opacity: 0; }
+  40% { -o-transform: perspective(400px) rotateY(-10deg); }
+  70% { -o-transform: perspective(400px) rotateY(10deg); }
+  100% { -o-transform: perspective(400px) rotateY(0deg); opacity: 1; } }
+@keyframes flipInY { 0% { transform: perspective(400px) rotateY(90deg); opacity: 0; }
+  40% { transform: perspective(400px) rotateY(-10deg); }
+  70% { transform: perspective(400px) rotateY(10deg); }
+  100% { transform: perspective(400px) rotateY(0deg); opacity: 1; } }
+/* line 35, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/flippers/_flipInY.scss */
+.flipInY { -webkit-animation-name: flipInY; -moz-animation-name: flipInY; -ms-animation-name: flipInY; -o-animation-name: flipInY; animation-name: flipInY; -webkit-backface-visibility: visible !important; -moz-backface-visibility: visible !important; -ms-backface-visibility: visible !important; -o-backface-visibility: visible !important; backface-visibility: visible !important; }
+
+@-webkit-keyframes flipOutY { 0% { -webkit-transform: perspective(400px) rotateY(0deg); opacity: 1; }
+  100% { -webkit-transform: perspective(400px) rotateY(90deg); opacity: 0; } }
+@-moz-keyframes flipOutY { 0% { -moz-transform: perspective(400px) rotateY(0deg); opacity: 1; }
+  100% { -moz-transform: perspective(400px) rotateY(90deg); opacity: 0; } }
+@-ms-keyframes flipOutY { 0% { -ms-transform: perspective(400px) rotateY(0deg); opacity: 1; }
+  100% { -ms-transform: perspective(400px) rotateY(90deg); opacity: 0; } }
+@-o-keyframes flipOutY { 0% { -o-transform: perspective(400px) rotateY(0deg); opacity: 1; }
+  100% { -o-transform: perspective(400px) rotateY(90deg); opacity: 0; } }
+@keyframes flipOutY { 0% { transform: perspective(400px) rotateY(0deg); opacity: 1; }
+  100% { transform: perspective(400px) rotateY(90deg); opacity: 0; } }
+/* line 29, C:/Ruby23/lib/ruby/gems/2.3.0/gems/animate-sass-0.1.1/stylesheets/animate/animations/flippers/_flipOutY.scss */
+.flipOutY { -webkit-animation-name: flipOutY; -moz-animation-name: flipOutY; -ms-animation-name: flipOutY; -o-animation-name: flipOutY; animation-name: flipOutY; -webkit-backface-visibility: visible !important; -moz-backface-visibility: visible !important; -ms-backface-visibility: visible !important; -o-backface-visibility: visible !important; backface-visibility: visible !important; }
+
+/* line 11, ../sass/style.scss */
 .top { position: relative; background-color: #FFF; padding-top: 40px; margin: 0 auto; }
-/* line 15, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .top img { width: 100%; height: 100%; }
 
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .navbar { position: fixed; top: 0; left: 0; width: 100%; height: 50px; overflow: hidden; background-color: rgba(255, 255, 255, 0.8); z-index: 999; transition: all 0.5s ease-out; }
-@media (min-width: 768px) { /* line 22, ../sass/style.scss */
+@media (min-width: 768px) { /* line 23, ../sass/style.scss */
   .navbar { padding-left: 300px; padding-right: 0; } }
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .navbar ul { list-style: none; text-align: center; }
-/* line 39, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .navbar ul img { width: 20px; display: none; }
-@media (min-width: 768px) { /* line 39, ../sass/style.scss */
+@media (min-width: 768px) { /* line 40, ../sass/style.scss */
   .navbar ul img { display: inline-block; } }
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .navbar li { display: block; padding: 15px; }
-@media (min-width: 768px) { /* line 47, ../sass/style.scss */
+@media (min-width: 768px) { /* line 48, ../sass/style.scss */
   .navbar li { display: inline-block; } }
 
-/* line 57, ../sass/style.scss */
-.navbar a { text-decoration: none; color: #464646; text-transform: uppercase; font-weight: 600; }
+/* line 58, ../sass/style.scss */
+.navbar a { text-decoration: none; color: #464646; text-transform: uppercase; font-weight: 600; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+/* line 64, ../sass/style.scss */
+.navbar a:hover { text-decoration: underline; }
 
-/* line 65, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .open-nav { height: 310px; }
 
-/* line 69, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .mobile-toggle { margin: 0 auto; text-align: center; position: relative; width: 60px; height: 60px; background-color: transparent; cursor: pointer; }
-@media (min-width: 768px) { /* line 69, ../sass/style.scss */
+@media (min-width: 768px) { /* line 74, ../sass/style.scss */
   .mobile-toggle { display: none; } }
-/* line 81, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .mobile-toggle div { background-color: #464646; width: 100%; height: 5px; margin: 3px auto 13px auto; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
-/* line 89, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .mobile-toggle.open :first-child { transform: translateY(18.5px) rotate(45deg); }
-/* line 92, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .mobile-toggle.open :nth-child(2) { opacity: 0; }
-/* line 95, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .mobile-toggle.open :nth-child(3) { transform: translateY(-18.5px) rotate(-45deg); }
 
 /*================!!!!===============*/
 /*================!!!!=================*/
 /*================!!!!=================*/
-/* line 106, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .content-hide { display: none; }
 
-/* line 110, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .content-show { padding: 10px; background: #fff; }
 
-/* line 115, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .person { text-align: center; }
-/* line 117, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .person a { font-size: 1.1em; color: #464646; }
-@media (min-width: 768px) { /* line 117, ../sass/style.scss */
+@media (min-width: 768px) { /* line 122, ../sass/style.scss */
   .person a { font-size: 1.8em; } }
-/* line 125, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .person p { font-size: 0.7em; line-height: 14px; }
-@media (min-width: 768px) { /* line 125, ../sass/style.scss */
+@media (min-width: 768px) { /* line 130, ../sass/style.scss */
   .person p { font-size: 1em; } }
 
-/* line 136, ../sass/style.scss */
-.organizators { margin: 0 auto; padding: 150px 0; -moz-transform: skew(0deg, -10deg); -ms-transform: skew(0deg, -10deg); -webkit-transform: skew(0deg, -10deg); transform: skew(0deg, -10deg); }
-/* line 140, ../sass/style.scss */
-.organizators .content-org { -moz-transform: skew(0deg, 10deg); -ms-transform: skew(0deg, 10deg); -webkit-transform: skew(0deg, 10deg); transform: skew(0deg, 10deg); margin: 0 auto; text-align: center; }
-/* line 144, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
+.organizators { margin: 0 auto; padding: 150px 0; -webkit-transform: skew(0deg, -10deg); -moz-transform: skew(0deg, -10deg); -ms-transform: skew(0deg, -10deg); -o-transform: skew(0deg, -10deg); transform: skew(0deg, -10deg); }
+/* line 145, ../sass/style.scss */
+.organizators .content-org { -webkit-transform: skew(0deg, 10deg); -moz-transform: skew(0deg, 10deg); -ms-transform: skew(0deg, 10deg); -o-transform: skew(0deg, 10deg); transform: skew(0deg, 10deg); margin: 0 auto; text-align: center; }
+/* line 149, ../sass/style.scss */
 .organizators .content-org h3 { color: #464646; }
-/* line 147, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .organizators .content-org p { color: #838383; }
-/* line 150, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .organizators .content-org img { max-width: 150px; }
-/* line 153, ../sass/style.scss */
-.organizators .content-org a { font-size: 1.7em; color: #464646; }
 /* line 158, ../sass/style.scss */
+.organizators .content-org a { font-size: 1.7em; color: #464646; }
+/* line 163, ../sass/style.scss */
 .organizators .mid { margin-top: 10px; }
-@media (min-width: 768px) { /* line 158, ../sass/style.scss */
+@media (min-width: 768px) { /* line 163, ../sass/style.scss */
   .organizators .mid { margin-top: 50px; } }
 
-/* line 167, ../sass/style.scss */
-.information { background: #1d1d1d; padding: 250px 0; -moz-transform: skew(0deg, -10deg); -ms-transform: skew(0deg, -10deg); -webkit-transform: skew(0deg, -10deg); transform: skew(0deg, -10deg); margin-top: 200px; color: #fefefe; }
-/* line 173, ../sass/style.scss */
-.information .content-inf { -moz-transform: skew(0deg, 10deg); -ms-transform: skew(0deg, 10deg); -webkit-transform: skew(0deg, 10deg); transform: skew(0deg, 10deg); text-align: center; }
-/* line 176, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
+.information { background: #1d1d1d; padding: 250px 0; -webkit-transform: skew(0deg, -10deg); -moz-transform: skew(0deg, -10deg); -ms-transform: skew(0deg, -10deg); -o-transform: skew(0deg, -10deg); transform: skew(0deg, -10deg); margin-top: 200px; color: #fefefe; }
+/* line 178, ../sass/style.scss */
+.information .content-inf { -webkit-transform: skew(0deg, 10deg); -moz-transform: skew(0deg, 10deg); -ms-transform: skew(0deg, 10deg); -o-transform: skew(0deg, 10deg); transform: skew(0deg, 10deg); text-align: center; }
+/* line 181, ../sass/style.scss */
 .information .content-inf img { max-width: 150px; }
-/* line 179, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .information .content-inf i { font-size: 8em; }
 
-/* line 185, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .info-text { margin-top: 50px; }
-/* line 187, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .info-text :nth-child(2) { margin-top: 20px; }
 
-/* line 194, ../sass/style.scss */
-.sponsors { padding-top: 200px; margin: 0 auto; text-align: center; color: #464646; }
 /* line 199, ../sass/style.scss */
-.sponsors img { width: 200px; height: 150px; padding: 20px; }
+.sponsors { padding-top: 200px; margin: 0 auto; text-align: center; color: #464646; }
 /* line 204, ../sass/style.scss */
+.sponsors img { width: 200px; height: 150px; padding: 20px; }
+/* line 209, ../sass/style.scss */
 .sponsors .sponsor-list { margin: 0 auto; text-align: left; width: 50%; padding-top: 30px; }
 
-/* line 212, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .arrow-container { position: relative; height: 100px; padding-top: 40px; }
-/* line 216, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .arrow-container .arrow { position: absolute; transform: translate(35%, -80%); font-size: 2em; opacity: 0; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; transition: all 0.3s linear; }
-/* line 224, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .arrow-container a { color: #464646; }
-/* line 226, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .arrow-container a:hover .arrow { opacity: 1; animation: pulse 3s infinite; transform: translate(35%, -80%); }
 
-/* line 236, ../sass/style.scss */
-.contact { background: #1d1d1d; padding: 250px 0; -moz-transform: skew(0deg, -10deg); -ms-transform: skew(0deg, -10deg); -webkit-transform: skew(0deg, -10deg); transform: skew(0deg, -10deg); margin-top: 200px; text-align: center; color: #fefefe; }
-/* line 243, ../sass/style.scss */
-.contact .content-contact { -moz-transform: skew(0deg, 10deg); -ms-transform: skew(0deg, 10deg); -webkit-transform: skew(0deg, 10deg); transform: skew(0deg, 10deg); text-align: center; }
-/* line 246, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
+.contact { background: #1d1d1d; padding: 250px 0; -webkit-transform: skew(0deg, -10deg); -moz-transform: skew(0deg, -10deg); -ms-transform: skew(0deg, -10deg); -o-transform: skew(0deg, -10deg); transform: skew(0deg, -10deg); margin-top: 200px; text-align: center; color: #fefefe; }
+/* line 248, ../sass/style.scss */
+.contact .content-contact { -webkit-transform: skew(0deg, 10deg); -moz-transform: skew(0deg, 10deg); -ms-transform: skew(0deg, 10deg); -o-transform: skew(0deg, 10deg); transform: skew(0deg, 10deg); text-align: center; }
+/* line 251, ../sass/style.scss */
 .contact .content-contact li { list-style: none; display: inline-block; font-size: 2.5em; padding: 15px; transform: scale(1); -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
-/* line 253, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .contact .content-contact li:hover { transform: scale(1.4); }
-/* line 256, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .contact .content-contact li a { color: #fefefe; }
-/* line 260, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .contact .content-contact .map { width: 350px; height: 230px; }
-@media (min-width: 768px) { /* line 260, ../sass/style.scss */
+@media (min-width: 768px) { /* line 265, ../sass/style.scss */
   .contact .content-contact .map { width: 600px; height: 400px; } }
-/* line 268, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 .contact .content-contact h2 { margin-bottom: 20px; }
 
-/* line 274, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .city { width: 100%; background-image: url("../img/BW-Template_02.jpg"); min-height: 200px; background-repeat: no-repeat; background-position: center; margin: 0 auto; }
 
-/* line 283, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 footer { color: #464646; margin: 150px auto 20px auto; }
-/* line 286, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 footer .foot { margin-top: 100px; position: relative; }
-/* line 289, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 footer .foot a { color: #464646; }
-/* line 292, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 footer .foot .klaudia { position: relative; height: 40px; }
-/* line 295, ../sass/style.scss */
-footer .foot .klaudia .brush { position: absolute; transform: translate(35%, -15%); font-size: 1.3em; }
 /* line 300, ../sass/style.scss */
+footer .foot .klaudia .brush { position: absolute; transform: translate(35%, -15%); font-size: 1.3em; }
+/* line 305, ../sass/style.scss */
 footer .foot .klaudia:hover .brush { animation: wrench 6s infinite; }
-/* line 304, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 footer .foot .emil { position: relative; height: 40px; }
-/* line 307, ../sass/style.scss */
-footer .foot .emil .pen { position: absolute; transform: translate(35%, -15%); font-size: 1.3em; }
 /* line 312, ../sass/style.scss */
+footer .foot .emil .pen { position: absolute; transform: translate(35%, -15%); font-size: 1.3em; }
+/* line 317, ../sass/style.scss */
 footer .foot .emil:hover .pen { animation: wrench 6s infinite; }
+
+/*=====Add to Animate.css=====*/
+/* line 325, ../sass/style.scss */
+.hidden { opacity: 0; }
+
+/* line 328, ../sass/style.scss */
+.visible { opacity: 1; }

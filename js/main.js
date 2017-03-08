@@ -46,6 +46,11 @@ $(".return-btn").click(function(){
   });
 });
 
+$('.post').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated zoomIn',
+        offset: 500
+       });
+
 // timer from information section
 	$('.timer').countTo();
 

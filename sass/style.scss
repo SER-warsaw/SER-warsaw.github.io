@@ -6,6 +6,7 @@
 @import "partials/timeline";
 @import "partials/grid";
 @import "susy";
+@import 'animate.sass';
 
 .top {
   position: relative;
@@ -59,6 +60,10 @@
     color: $heading-dark;
     text-transform: uppercase;
     font-weight: 600;
+    @include bs-trans(0.3s, ease-out);
+&:hover {
+  text-decoration: underline;
+}
 }
 }
 // open nav
@@ -314,5 +319,13 @@ footer {
       }
     }
   }
+}
+
+/*=====Add to Animate.css=====*/
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
 }
 
