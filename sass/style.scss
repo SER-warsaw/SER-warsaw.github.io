@@ -30,10 +30,6 @@
   background-color: rgba($second-bg-color, .8);
   z-index: 999;
   transition: all 0.5s ease-out;
-  @media #{$phone}{
-      padding-left:300px;
-       padding-right: 0;
-    }
   ul{
     list-style: none;
     text-align: center;
@@ -202,8 +198,9 @@
   text-align: center;
   color: $heading-dark;
   img {
-    width: 200px;
-    height: 150px;
+    width: auto;
+    max-width: 200px;
+    height: 120px;
     padding: 20px;
   }
   .sponsor-list {
@@ -221,7 +218,6 @@
   .arrow{
     position: absolute;
     transform: translate(35%, -80%);
-   
     font-size: 2em;
     opacity: 0;
     @include bs-trans(0.3s, linear);
@@ -230,8 +226,6 @@
       color: $heading-dark;
       &:hover .arrow{
         opacity: 1;
-        animation: pulse 3s infinite;
-        transform: translate(35%, -80%);
       }
     }
   }
@@ -263,10 +257,10 @@
     }
    }
     .map {
-      width: 350px;
+      width: 300px;
       height: 230px;
       @media #{$phone}{
-      width: 600px;
+      width: 550px;
       height: 400px;
       }
     }
@@ -297,6 +291,7 @@ footer {
     .klaudia {
       position: relative;
       height: 40px;
+      margin-bottom: 10px;
       .brush {
         position: absolute;
         transform: translate(35%, -15%);
@@ -309,6 +304,10 @@ footer {
     .emil {
       position: relative;
       height: 40px;
+      margin-top: 30px;
+      @media #{$phone}{
+        margin-top: 0;
+      }
       .pen {
         position: absolute;
         transform: translate(35%, -15%);
@@ -323,8 +322,11 @@ footer {
 
 /*=====Add to Animate.css=====*/
 .hidden{
-     opacity:0;
+  @media #{$phone}{
+    opacity:0;
+  }
 }
+     
 .visible{
      opacity:1;
 }

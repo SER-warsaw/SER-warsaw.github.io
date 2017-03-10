@@ -46,11 +46,13 @@ $(".return-btn").click(function(){
   });
 });
 
+
+if(matchMedia('only screen and (min-width: 769px').matches){
 $('.post').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated zoomIn',
         offset: 500
        });
-
+}
 // timer from information section
 	$('.timer').countTo();
 
